@@ -12,6 +12,11 @@ import torch.nn as nn
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer, util
 
+try:
+    from .local_model_store import get_local_model_dir
+except ImportError:
+    from local_model_store import get_local_model_dir
+
 
 # ============================================================
 # Model Architecture (must match training)
@@ -63,6 +68,8 @@ _MODEL_PATH = None
 
 _BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_MODEL_PATH = _BASE_DIR / "argument_quality_model_4features.pth"
+_NLI_MODEL_ID = "facebook/bart-large-mnli"
+_SIM_MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 def load_models(model_path: str = str(DEFAULT_MODEL_PATH)):
@@ -83,7 +90,19 @@ def load_models(model_path: str = str(DEFAULT_MODEL_PATH)):
     if not resolved_path.exists():
         raise FileNotFoundError(f"Model checkpoint not found: {resolved_path}")
 
-    _MODEL_PATH = str(resolved_path)
+    resolved_model_path = str(resolved_path)
+
+    # Reuse already-loaded models in current process.
+    if (
+        _MODEL is not None
+        and _NLI_PIPELINE is not None
+        and _SIMILARITY_MODEL is not None
+        and _MODEL_PATH == resolved_model_path
+    ):
+        print("✅ Models already loaded in memory; reusing current instance.\n")
+        return
+
+    _MODEL_PATH = resolved_model_path
 
     # Set device
     _DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -106,16 +125,18 @@ def load_models(model_path: str = str(DEFAULT_MODEL_PATH)):
     # Load NLI pipeline
     print("   Loading NLI pipeline...")
     device_id = 0 if _DEVICE.type == 'cuda' else -1
+    nli_model_path = get_local_model_dir(_NLI_MODEL_ID)
     _NLI_PIPELINE = pipeline(
         "text-classification",
-        model="facebook/bart-large-mnli",
+        model=nli_model_path,
         device=device_id
     )
     
     # Load similarity model
     print("   Loading similarity model...")
+    sim_model_path = get_local_model_dir(_SIM_MODEL_ID)
     _SIMILARITY_MODEL = SentenceTransformer(
-        "all-MiniLM-L6-v2",
+        sim_model_path,
         device=_DEVICE.type
     )
     

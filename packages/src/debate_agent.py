@@ -49,6 +49,11 @@ try:
 except ImportError:
     from model_inference import load_models, predict_argument_quality
 
+try:
+    from .local_model_store import get_local_model_dir
+except ImportError:
+    from local_model_store import get_local_model_dir
+
 
 _BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_MODEL_PATH = _BASE_DIR / "argument_quality_model_4features.pth"
@@ -60,6 +65,7 @@ _ner_pipeline = None
 _ner_pipeline_gene = None
 _query_tokenizer = None
 _query_model = None
+_reranker_model = None
 
 
 # ============================================================
@@ -158,9 +164,12 @@ def get_rhetorical_devices() -> str:
 # Reranker utility
 # ============================================================
 
-_reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L6-v2")
+_RERANKER_MODEL_ID = "cross-encoder/ms-marco-MiniLM-L6-v2"
 
 def rerank_top3(query: str, documents: list[str]) -> list[str]:
+    if _reranker_model is None:
+        initialize_runtime_models()
+
     if not documents:
         return []
     scores = _reranker_model.predict([(query, doc) for doc in documents])
@@ -257,41 +266,55 @@ def _pubmed_fetch(query: str, retmax: int = 15) -> list[str]:
 # ============================================================
 
 _QUERY_GEN_MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
+_NER_DISEASE_MODEL_ID = "pruas/BENT-PubMedBERT-NER-Disease"
+_NER_GENE_MODEL_ID = "pruas/BENT-PubMedBERT-NER-Gene"
 
 
 def initialize_runtime_models(force_reload: bool = False) -> None:
-    global _ner_pipeline, _ner_pipeline_gene, _query_tokenizer, _query_model
+    global _ner_pipeline, _ner_pipeline_gene, _query_tokenizer, _query_model, _reranker_model
 
     if not force_reload and all(
-        x is not None for x in (_ner_pipeline, _ner_pipeline_gene, _query_tokenizer, _query_model)
+        x is not None for x in (
+            _ner_pipeline,
+            _ner_pipeline_gene,
+            _query_tokenizer,
+            _query_model,
+            _reranker_model,
+        )
     ):
         return
 
     print("🚀 Initializing runtime models...")
     print(f"   CUDA available: {_HAS_CUDA}")
 
+    ner_disease_model_path = get_local_model_dir(_NER_DISEASE_MODEL_ID)
+    ner_gene_model_path = get_local_model_dir(_NER_GENE_MODEL_ID)
+    query_model_path = get_local_model_dir(_QUERY_GEN_MODEL_ID)
+    reranker_model_path = get_local_model_dir(_RERANKER_MODEL_ID)
+
     _ner_pipeline = hf_pipeline(
         "ner",
-        model="pruas/BENT-PubMedBERT-NER-Disease",
+        model=ner_disease_model_path,
         aggregation_strategy="simple",
         device=_HF_DEVICE_ID,
     )
     _ner_pipeline_gene = hf_pipeline(
         "ner",
-        model="pruas/BENT-PubMedBERT-NER-Gene",
+        model=ner_gene_model_path,
         aggregation_strategy="simple",
         device=_HF_DEVICE_ID,
     )
 
-    _query_tokenizer = AutoTokenizer.from_pretrained(_QUERY_GEN_MODEL_ID)
+    _query_tokenizer = AutoTokenizer.from_pretrained(query_model_path)
     query_dtype = torch.float16 if _HAS_CUDA else torch.float32
     device_map = "cuda" if _HAS_CUDA else "cpu"
     _query_model = AutoModelForCausalLM.from_pretrained(
-        _QUERY_GEN_MODEL_ID,
+        query_model_path,
         torch_dtype=query_dtype,
         device_map=device_map,
     )
     _query_model.eval()
+    _reranker_model = CrossEncoder(reranker_model_path)
     print(f"✅ Query-gen model loaded on {next(_query_model.parameters()).device}")
 
 
