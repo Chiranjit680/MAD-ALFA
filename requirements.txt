@@ -1,0 +1,14 @@
+langgraph
+langchain_community
+ddgs
+pandas
+numpy
+torch
+sentence-transformers
+spacy
+accelerate
+huggingface_hub
+transformers
+datasets
+requests
+json5
