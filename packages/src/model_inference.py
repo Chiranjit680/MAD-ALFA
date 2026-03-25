@@ -88,6 +88,8 @@ def load_models(model_path: str = str(DEFAULT_MODEL_PATH)):
     # Set device
     _DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"   Device: {_DEVICE}")
+    if _DEVICE.type != "cuda":
+        print("   Note: CUDA not detected; running on CPU. Install CUDA-enabled PyTorch for GPU acceleration.")
     
     # Load model checkpoint
     print(f"   Loading model from: {_MODEL_PATH}")
@@ -415,6 +417,22 @@ def _build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _run_default_demo() -> None:
+    print("No --argument/--topic provided; running default single-example demo.")
+    result = predict_argument_quality(
+        argument="Taking action on climate change reduces long-term economic and health risks.",
+        topic="We should take action on climate change",
+        stance="PRO",
+        return_details=True,
+    )
+    print(f"Quality score : {result['quality_score']:.3f}")
+    print(f"Quality level : {result['quality_level']}")
+    print(f"Relevance     : {result['relevance_score']:.3f}")
+    print("Features:")
+    for name, value in result["features"].items():
+        print(f"  - {name}: {value:.3f}")
+
+
 if __name__ == "__main__":
     args = _build_parser().parse_args()
 
@@ -442,7 +460,9 @@ if __name__ == "__main__":
             print(f"Argument {i}: {result['quality_score']:.3f} ({result['quality_level']})")
     else:
         if not args.argument or not args.topic:
-            raise ValueError("Use --argument and --topic for single prediction, or pass --batch-demo")
+            _run_default_demo()
+            print("Tip: pass --argument and --topic for custom input, or --batch-demo for multiple samples.")
+            raise SystemExit(0)
 
         result = predict_argument_quality(
             argument=args.argument,
