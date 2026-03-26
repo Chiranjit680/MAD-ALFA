@@ -50,3 +50,29 @@ From packages/src:
 ```powershell
 python model_inference.py --argument "Climate action is urgent" --topic "We should take action on climate change" --stance PRO --details
 ```
+
+## Run Rebuttal Node
+
+From packages/src:
+
+```powershell
+python rebuttal_node.py --topic "Should corticosteroids be used routinely in septic shock management?" --argument "Corticosteroids should be administered routinely in all septic shock patients because they rapidly resolve haemodynamic instability and reduce vasopressor dependency."
+```
+
+How cached model loading works:
+- Rebuttal NER uses `d4data/biomedical-ner-all`.
+- The model is cached in `packages/src/.model_store` via `local_model_store.py`.
+- After first download, next runs reuse the local cache automatically.
+
+Optional arguments:
+- `--hf-api-key` to pass token directly (otherwise `HF_TOKEN` is used)
+- `--force-model-download` to refresh the cached NER model
+
+GPU selection:
+- CUDA is used automatically when available.
+- To pick a specific GPU, set `REBUTTAL_GPU_DEVICE` before running.
+
+```powershell
+$env:REBUTTAL_GPU_DEVICE="0"
+python rebuttal_node.py --topic "..." --argument "..."
+```
