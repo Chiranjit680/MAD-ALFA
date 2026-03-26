@@ -33,7 +33,6 @@ import json
 import requests
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
-
 import numpy as np
 import torch
 from huggingface_hub import InferenceClient
@@ -53,7 +52,13 @@ try:
     from .local_model_store import get_local_model_dir
 except ImportError:
     from local_model_store import get_local_model_dir
+import os
+import dotenv
+dotenv.load_dotenv()
 
+os.environ["TRANSFORMERS_VERIFY_SCHEDULED_LOAD_SAFETY"] = "0"
+
+# ... the rest of your imports ...
 
 _BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_MODEL_PATH = _BASE_DIR / "argument_quality_model_4features.pth"
@@ -266,8 +271,8 @@ def _pubmed_fetch(query: str, retmax: int = 15) -> list[str]:
 # ============================================================
 
 _QUERY_GEN_MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
-_NER_DISEASE_MODEL_ID = "pruas/BENT-PubMedBERT-NER-Disease"
-_NER_GENE_MODEL_ID = "pruas/BENT-PubMedBERT-NER-Gene"
+_NER_DISEASE_MODEL_ID = "d4data/biomedical-ner-all"
+_NER_GENE_MODEL_ID = "d4data/biomedical-ner-all"
 
 
 def initialize_runtime_models(force_reload: bool = False) -> None:
