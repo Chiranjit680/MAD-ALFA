@@ -76,3 +76,5 @@ GPU selection:
 $env:REBUTTAL_GPU_DEVICE="0"
 python rebuttal_node.py --topic "..." --argument "..."
 ```
+```
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=4 python debate_engine.py
