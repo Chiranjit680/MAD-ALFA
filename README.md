@@ -36,7 +36,8 @@ python -c "import torch; print('CUDA:', torch.cuda.is_available()); print('Devic
 From packages/src:
 
 ```powershell
-python debate_agent.py --topic "Should schools ban smartphones in classrooms?" --stance PRO --max-iterations 5
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=4 python debate_agent.py --topic "Are group 2 innate lymphoid cells (
+ ILC2s ) increased in chronic rhinosinusitis with nasal polyps or eosinophilia?" --stance PRO --max-iterations 5
 ```
 
 Optional arguments:
@@ -78,3 +79,4 @@ python rebuttal_node.py --topic "..." --argument "..."
 ```
 ```
 CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=4 python debate_engine.py
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=6 python get_judge_lm.py

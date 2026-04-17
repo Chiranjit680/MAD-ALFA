@@ -4,6 +4,8 @@
 # This stops Git from trying to track/hash GBs of models
 .model_store/
 packages/src/.model_store/
+packages/src/mixtral_local/
+packages/src/pubmedqa_train.csv
 **/packages/src/.model_store/
 packages/src/.model_store/
 .model_store/
@@ -39,6 +41,7 @@ Thumbs.db
 .cursorignore
 .cursorindexingignore
 *.log
+
 
 # ==========================================
 # 📦 GIT LFS TMP (FIX FOR DISK FULL ERROR)
