@@ -54,15 +54,21 @@ except ImportError:
     from local_model_store import get_local_model_dir
 import os
 import dotenv
+from get_judge_lm import llm_inference
 dotenv.load_dotenv()
 
 os.environ["TRANSFORMERS_VERIFY_SCHEDULED_LOAD_SAFETY"] = "0"
 
 # ... the rest of your imports ...
+from dotenv import load_dotenv
+load_dotenv()
+
 
 _BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_MODEL_PATH = _BASE_DIR / "argument_quality_model_4features.pth"
 _HAS_CUDA = torch.cuda.is_available()
+# Respect externally pinned CUDA visibility (e.g. CUDA_VISIBLE_DEVICES in
+# debate_benchmarking_hf.py). After masking, selected GPU is always local cuda:0.
 _HF_DEVICE_ID = 0 if _HAS_CUDA else -1
 
 # Runtime-loaded models (initialized by initialize_runtime_models)
@@ -534,9 +540,9 @@ def _execute_tool(call: dict) -> str:
     return str(result)
 
 
-class LlamaGenerator:
+class MistralGenerator:
     """
-    Generates debate arguments using meta-llama/Meta-Llama-3-8B-Instruct
+    Generates debate arguments using mistralai/Mistral-7B-Instruct-v0.3
     via HuggingFace InferenceClient.chat_completion().
 
     Tool calling uses a prompt-based JSON protocol:
@@ -547,13 +553,10 @@ class LlamaGenerator:
       4. After 5 rounds without a final answer, the last reply is returned.
     """
 
-    _MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
+    
 
-    def __init__(self):
-        api_key = os.getenv("HF_TOKEN")
-        if not api_key:
-            raise ValueError("Set HF_TOKEN environment variable")
-        self.client = InferenceClient(self._MODEL, token=api_key)
+    def __init__(self): 
+        pass
 
     def generate(
         self,
@@ -620,9 +623,10 @@ class LlamaGenerator:
         for round_num in range(5):
             print(f"   🔄 Generator round {round_num + 1}")
 
-            resp = self.client.chat_completion(messages, max_tokens=900)
+            resp = llm_inference(f"Generate a compelling {stance} argument for: {topic}", max_new_tokens=900)
 
-            reply_text = (resp.choices[0].message.content or "").strip()
+            reply_text = resp.strip()
+            
             last_text  = reply_text
 
             tool_call = _parse_tool_call(reply_text)
@@ -651,7 +655,7 @@ def generator_node(state: DebateState) -> dict:
     print(f"🤖 GENERATOR NODE (Iteration {state['iteration']})")
     print(f"{'='*60}")
 
-    argument = LlamaGenerator().generate(
+    argument = MistralGenerator().generate(
         topic=state["topic"],
         stance=state["stance"],
         pubmed_query=state["pubmed_query"],
@@ -676,12 +680,27 @@ def critic_node(state: DebateState) -> dict:
     print("🔍 CRITIC NODE – Running FFN Evaluation")
     print(f"{'='*60}")
 
-    result = predict_argument_quality(
-        argument=state["argument"],
-        topic=state["topic"],
-        stance=state["stance"],
-        return_details=True,
-    )
+    try:
+        result = predict_argument_quality(
+            argument=state["argument"],
+            topic=state["topic"],
+            stance=state["stance"],
+            return_details=True,
+        )
+    except RuntimeError as exc:
+        # debate_engine imports this module directly and may not preload the
+        # quality model checkpoint via the CLI path in __main__.
+        if "Models not loaded! Call load_models() first." not in str(exc):
+            raise
+
+        print("   ℹ️  Quality models not loaded; loading checkpoint now...")
+        load_models(str(DEFAULT_MODEL_PATH))
+        result = predict_argument_quality(
+            argument=state["argument"],
+            topic=state["topic"],
+            stance=state["stance"],
+            return_details=True,
+        )
 
     features         = result["features"]
     nli_score        = features["relevance_support"]
@@ -996,3 +1015,7 @@ if __name__ == "__main__":
 
     print(f"\nDone in {result['iterations_used']} iteration(s) "
           f"| Final quality: {result['quality_score']:.3f} ({result['quality_level']})")
+    print(result.keys())
+    keys=result.keys()
+    for key in keys:
+        print(key+":["+ result[key] + "]" )

@@ -51,9 +51,9 @@ except ImportError:
     from local_model_store import get_local_model_dir
 
 try:
-    from .get_judge_lm import mistral_inference
+    from .get_judge_lm import llm_inference
 except ImportError:
-    from get_judge_lm import mistral_inference
+    from get_judge_lm import llm_inference
 
 from debate_agent import DebateState, create_debate_argument_graph
 from rebuttal_node import RebuttalState, create_rebuttal_graph
@@ -63,10 +63,11 @@ load_dotenv()
 # =============================================================================
 # Runtime model configuration
 # =============================================================================
-GPU_DEVICE = os.getenv("GPU_DEVICE", "0")
-_HAS_CUDA   = torch.cuda.is_available()
-_DEVICE_ID  = int(GPU_DEVICE) if _HAS_CUDA else -1
-_DTYPE      = torch.float16 if _HAS_CUDA else torch.float32
+_HAS_CUDA = torch.cuda.is_available()
+# Respect externally pinned CUDA visibility (e.g. CUDA_VISIBLE_DEVICES in
+# debate_benchmarking_hf.py). After masking, selected GPU is always local cuda:0.
+_DEVICE_ID = 0 if _HAS_CUDA else -1
+_DTYPE = torch.float16 if _HAS_CUDA else torch.float32
 
 _NLI_MODEL_ID   = "facebook/bart-large-mnli"
 _EMBED_MODEL_ID = "sentence-transformers/all-MiniLM-L6-v2"
@@ -183,6 +184,12 @@ class OrchestratorState(TypedDict):
     d2_rebuttal_counter_points: list
     d2_rebuttal_evidence:       dict
 
+    # moderator scores out of 10 — assigned after each of the 4 rounds
+    score_pro_arg:      float   # PRO opening argument
+    score_con_arg:      float   # CON opening argument
+    score_pro_rebuttal: float   # PRO rebuttal
+    score_con_rebuttal: float   # CON rebuttal
+
     # convergence
     convergence_summary: str
     winner:              str
@@ -208,22 +215,22 @@ class OrchestratorState(TypedDict):
 
 def _local_chat(messages: list[dict], max_new_tokens: int = 600) -> str:
     """
-    Call mistral_inference with the conversation messages.
+    Call llm_inference with the conversation messages.
 
-    mistral_inference is assumed to accept either:
+    llm_inference is assumed to accept either:
       (a) a pre-formatted prompt string, OR
       (b) a list of {"role": ..., "content": ...} dicts.
 
     We try (b) first; if the function signature only accepts a string we
-    fall back to (a) with minimal Mistral-instruct formatting.
+    fall back to (a) with minimal-instruct formatting.
 
     IMPORTANT: We deliberately do NOT double-wrap with <s>[INST]…[/INST]
-    if mistral_inference already applies its own chat template internally.
+    if llm_inference already applies its own chat template internally.
     Inspect get_judge_lm.py if you still get empty responses — the template
     may need to be removed from one side.
     """
     import inspect
-    sig = inspect.signature(mistral_inference)
+    sig = inspect.signature(llm_inference)
     params = list(sig.parameters.keys())
 
     # Build a plain user string as fallback
@@ -233,10 +240,10 @@ def _local_chat(messages: list[dict], max_new_tokens: int = 600) -> str:
     # Prefer passing the messages list directly when the function accepts it
     first_param = params[0] if params else "prompt"
     if first_param in ("messages", "conversation"):
-        raw = mistral_inference(messages, max_new_tokens=max_new_tokens)
+        raw = llm_inference(messages, max_new_tokens=max_new_tokens)
     else:
         # Single-string path — use minimal instruct format
-        # Only wrap if mistral_inference does NOT apply its own template.
+        # Only wrap if llm_inference does NOT apply its own template.
         # If you see double [INST] tags in logs, remove the wrapping here.
         system_parts = [m["content"] for m in messages if m.get("role") == "system"]
         system_prefix = (" ".join(system_parts) + "\n\n") if system_parts else ""
@@ -247,12 +254,12 @@ def _local_chat(messages: list[dict], max_new_tokens: int = 600) -> str:
             elif m["role"] == "assistant":
                 turns.append(m["content"])
         prompt = "<s>" + system_prefix + " ".join(turns)
-        raw = mistral_inference(prompt, max_new_tokens=max_new_tokens)
+        raw = llm_inference(prompt, max_new_tokens=max_new_tokens)
 
-    print(f"   📡 mistral_inference called (max_new_tokens={max_new_tokens})")
+    print(f"   📡 llm_inference called (max_new_tokens={max_new_tokens})")
     result = (raw or "").strip()
     if not result:
-        print("   ⚠️  mistral_inference returned an empty string.")
+        print("   ⚠️  llm_inference returned an empty string.")
     else:
         print(f"   ✅ Response received ({len(result)} chars).")
     return result
@@ -776,117 +783,212 @@ def debater2_rebuttal_node(state: OrchestratorState) -> dict:
 
 
 # =============================================================================
-# Node 6 – Convergence
+# Scoring helper — moderator scores a single argument or rebuttal out of 10
+# =============================================================================
+
+def _moderator_score(role: str, text: str, topic: str, context: str = "") -> float:
+    """
+    Ask the moderator to score a piece of debate text out of 10.
+
+    Extracts a plain integer/float from the response — no JSON required.
+    Falls back to 5.0 if nothing numeric is found.
+
+    Parameters
+    ----------
+    role    : "PRO argument" | "CON argument" | "PRO rebuttal" | "CON rebuttal"
+    text    : The argument or rebuttal text to score.
+    topic   : The framed debate motion.
+    context : Optional context (e.g. the opposing argument for rebuttal scoring).
+    """
+    prompt = (
+        f"You are a strict debate judge scoring a {role} on the motion:\n"
+        f"\"{topic}\"\n\n"
+    )
+    if context:
+        prompt += f"For reference, the opposing argument was:\n{_trunc(context, 300)}\n\n"
+    prompt += (
+        f"{role.upper()}:\n{_trunc(text, 500)}\n\n"
+        "Score this {role} out of 10 based on:\n"
+        "  • Strength and relevance of evidence\n"
+        "  • Logical coherence\n"
+        "  • Directly addressing the motion\n"
+        "  • Clarity and persuasiveness\n\n"
+        "Reply with ONLY a single number between 0 and 10 (decimals allowed). "
+        "No explanation, no text — just the number."
+    )
+
+    raw = _local_chat([{"role": "user", "content": prompt}], max_new_tokens=10)
+
+    # Extract the first number we find in the response
+    match = re.search(r"\b(\d{1,2}(?:\.\d{1,2})?)\b", raw or "")
+    if match:
+        score = float(match.group(1))
+        score = max(0.0, min(10.0, score))   # clamp to [0, 10]
+        print(f"   🎯 Moderator score for {role}: {score:.1f}/10")
+        return score
+
+    print(f"   ⚠  Could not parse score from: {raw!r} — defaulting to 5.0")
+    return 5.0
+
+
+# =============================================================================
+# Node 6a – Moderator scores PRO opening argument
+# =============================================================================
+
+def score_pro_arg_node(state: OrchestratorState) -> dict:
+    print(f"\n{'='*70}")
+    print("🎙️  MODERATOR SCORING – PRO Opening Argument")
+    print(f"{'='*70}")
+    score = _moderator_score(
+        role    = "PRO argument",
+        text    = state["d1_argument"],
+        topic   = state["framed_topic"],
+    )
+    return {
+        "score_pro_arg": score,
+        "messages": [{"role": "moderator_score", "content": f"PRO argument score: {score:.1f}/10"}],
+    }
+
+
+# =============================================================================
+# Node 6b – Moderator scores CON opening argument
+# =============================================================================
+
+def score_con_arg_node(state: OrchestratorState) -> dict:
+    print(f"\n{'='*70}")
+    print("🎙️  MODERATOR SCORING – CON Opening Argument")
+    print(f"{'='*70}")
+    score = _moderator_score(
+        role    = "CON argument",
+        text    = state["d2_argument"],
+        topic   = state["framed_topic"],
+        context = state["d1_argument"],
+    )
+    return {
+        "score_con_arg": score,
+        "messages": [{"role": "moderator_score", "content": f"CON argument score: {score:.1f}/10"}],
+    }
+
+
+# =============================================================================
+# Node 6c – Moderator scores PRO rebuttal
+# =============================================================================
+
+def score_pro_rebuttal_node(state: OrchestratorState) -> dict:
+    print(f"\n{'='*70}")
+    print("🎙️  MODERATOR SCORING – PRO Rebuttal")
+    print(f"{'='*70}")
+    score = _moderator_score(
+        role    = "PRO rebuttal",
+        text    = state["d1_rebuttal"],
+        topic   = state["framed_topic"],
+        context = state["d2_argument"],
+    )
+    return {
+        "score_pro_rebuttal": score,
+        "messages": [{"role": "moderator_score", "content": f"PRO rebuttal score: {score:.1f}/10"}],
+    }
+
+
+# =============================================================================
+# Node 6d – Moderator scores CON rebuttal
+# =============================================================================
+
+def score_con_rebuttal_node(state: OrchestratorState) -> dict:
+    print(f"\n{'='*70}")
+    print("🎙️  MODERATOR SCORING – CON Rebuttal")
+    print(f"{'='*70}")
+    score = _moderator_score(
+        role    = "CON rebuttal",
+        text    = state["d2_rebuttal"],
+        topic   = state["framed_topic"],
+        context = state["d1_argument"],
+    )
+    return {
+        "score_con_rebuttal": score,
+        "messages": [{"role": "moderator_score", "content": f"CON rebuttal score: {score:.1f}/10"}],
+    }
+
+
+# =============================================================================
+# Node 6 – Convergence  (winner decided by scores — NO JSON parsing)
 # =============================================================================
 
 def convergence_node(state: OrchestratorState) -> dict:
     print(f"\n{'='*70}")
-    print("⚖️  CONVERGENCE NODE – Moderator closes the debate")
+    print("⚖️  CONVERGENCE NODE – Tallying scores and generating summary")
     print(f"{'='*70}")
 
+    # ── Tally scores ──────────────────────────────────────────────────────────
+    pro_total = state["score_pro_arg"] + state["score_pro_rebuttal"]
+    con_total = state["score_con_arg"] + state["score_con_rebuttal"]
+
+    if pro_total > con_total:
+        winner = "PRO"
+    elif con_total > pro_total:
+        winner = "CON"
+    else:
+        winner = "DRAW"
+
+    print(f"\n   📊 Scorecard:")
+    print(f"      PRO argument  : {state['score_pro_arg']:.1f}/10")
+    print(f"      CON argument  : {state['score_con_arg']:.1f}/10")
+    print(f"      PRO rebuttal  : {state['score_pro_rebuttal']:.1f}/10")
+    print(f"      CON rebuttal  : {state['score_con_rebuttal']:.1f}/10")
+    print(f"      ─────────────────────")
+    print(f"      PRO total     : {pro_total:.1f}/20")
+    print(f"      CON total     : {con_total:.1f}/20")
+    print(f"   🏆 Winner        : {winner}")
+
+    # ── Run local NLI + semantic scoring (kept for verdict node context) ──────
     scores  = _score_argument_pair(
         framed_topic=state["framed_topic"],
         pro_argument=state["d1_argument"],
         con_argument=state["d2_argument"],
     )
-    pro_nli = scores["pro_nli_score"]
-    con_nli = scores["con_nli_score"]
-    pro_sem = scores["pro_semantic_score"]
-    con_sem = scores["con_semantic_score"]
 
-    # Truncate arguments to keep prompt within context window
-    pro_arg_short = _trunc(state["d1_argument"], 500)
-    con_arg_short = _trunc(state["d2_argument"], 500)
-    pro_reb_short = _trunc(state["d1_rebuttal"], 400)
-    con_reb_short = _trunc(state["d2_rebuttal"], 400)
-
-    prompt = (
-        "You are a professional debate moderator closing the debate.\n\n"
+    # ── Generate plain-text summary — no JSON, just ask for prose ─────────────
+    summary_prompt = (
+        "You are a professional debate moderator writing a closing summary.\n\n"
         f"Motion: {state['framed_topic']}\n\n"
-        f"PRO Opening Argument (quality: {state['d1_quality_score']:.3f}):\n"
-        f"{pro_arg_short}\n\n"
-        f"CON Opening Argument (quality: {state['d2_quality_score']:.3f}):\n"
-        f"{con_arg_short}\n\n"
-        f"PRO Rebuttal:\n{pro_reb_short}\n\n"
-        f"CON Rebuttal:\n{con_reb_short}\n\n"
-        f"Automated Scores — "
-        f"PRO NLI: {pro_nli:.3f}, PRO Semantic: {pro_sem:.3f}, "
-        f"CON NLI: {con_nli:.3f}, CON Semantic: {con_sem:.3f}\n\n"
-        "Your tasks:\n"
-        "1. Summarise the key clash points (3-5 sentences).\n"
-        "2. Evaluate which side had stronger evidence and logic.\n"
-        "3. Declare a winner: PRO, CON, or DRAW.\n\n"
-        "You MUST respond with ONLY a valid JSON object — no explanation, "
-        "no markdown, no extra text:\n"
-        '{"convergence_summary": "...", "winner": "PRO or CON or DRAW", '
-        '"winner_justification": "..."}'
+        f"PRO argument (scored {state['score_pro_arg']:.1f}/10):\n"
+        f"{_trunc(state['d1_argument'], 400)}\n\n"
+        f"CON argument (scored {state['score_con_arg']:.1f}/10):\n"
+        f"{_trunc(state['d2_argument'], 400)}\n\n"
+        f"PRO rebuttal (scored {state['score_pro_rebuttal']:.1f}/10):\n"
+        f"{_trunc(state['d1_rebuttal'], 300)}\n\n"
+        f"CON rebuttal (scored {state['score_con_rebuttal']:.1f}/10):\n"
+        f"{_trunc(state['d2_rebuttal'], 300)}\n\n"
+        f"Final scores — PRO: {pro_total:.1f}/20  |  CON: {con_total:.1f}/20\n"
+        f"Winner: {winner}\n\n"
+        "Write a 3-5 sentence closing summary of the debate highlighting the "
+        "key clash points and why the scores fell the way they did. "
+        "Plain prose only — no JSON, no bullet points."
     )
 
-    conv_summary  = ""
-    winner        = "DRAW"
-    justification = ""
+    raw_summary = _local_chat([{"role": "user", "content": summary_prompt}], max_new_tokens=300)
+    # Use whatever the model returned as-is — no parsing needed
+    conv_summary = raw_summary.strip() if raw_summary.strip() else (
+        f"The debate on '{state['framed_topic']}' concluded with "
+        f"PRO scoring {pro_total:.1f}/20 and CON scoring {con_total:.1f}/20. "
+        f"{winner} is declared the winner."
+    )
 
-    _MAX_RETRIES  = 3
-    _messages     = [{"role": "user", "content": prompt}]
-    last_raw      = ""
-    parsed        = None
+    display_summary = (
+        f"{conv_summary}\n\n"
+        f"📊 Scores — PRO: {pro_total:.1f}/20  |  CON: {con_total:.1f}/20\n"
+        f"🏆 Winner: {winner}"
+    )
 
-    for attempt in range(1, _MAX_RETRIES + 1):
-        try:
-            last_raw = _local_chat(_messages, max_new_tokens=500)
-            parsed   = _extract_json(last_raw)
-
-            conv_summary  = parsed["convergence_summary"]
-            winner_raw    = parsed.get("winner", "DRAW").strip().upper()
-            winner        = winner_raw if winner_raw in _VALID_WINNERS else "DRAW"
-            justification = parsed.get("winner_justification", "")
-            print(f"   ✅ Convergence parsed successfully (attempt {attempt}/{_MAX_RETRIES}).")
-            break  # success — exit retry loop
-
-        except Exception as exc:
-            print(f"   ⚠  Convergence attempt {attempt}/{_MAX_RETRIES} failed: {exc}")
-            print(f"   ⚠  Raw output: {last_raw[:400]!r}")
-
-            if attempt < _MAX_RETRIES:
-                # Feed the bad response back so the model can self-correct
-                _messages = _messages + [
-                    {"role": "assistant", "content": last_raw or "(empty)"},
-                    {
-                        "role": "user",
-                        "content": (
-                            "Your previous response was not valid JSON. "
-                            f"Error: {exc}\n\n"
-                            "Respond ONLY with a valid JSON object — "
-                            "no explanation, no markdown:\n"
-                            '{"convergence_summary": "...", '
-                            '"winner": "PRO or CON or DRAW", '
-                            '"winner_justification": "..."}'
-                        ),
-                    },
-                ]
-            else:
-                print("   ⚠  All 3 attempts failed — using score-based fallback (DRAW).")
-                fallback      = _fallback_convergence_summary(scores)
-                conv_summary  = fallback["convergence_summary"]
-                winner        = fallback["winner"]
-                justification = fallback["winner_justification"]
-
-    # Keep convergence_summary clean — winner is stored separately in state
-    display_summary = f"{conv_summary}\n\n🏆 Winner: {winner} — {justification}"
-
-    print(f"\n   📋 Summary       : {conv_summary}")
-    print(f"   🏆 Winner        : {winner}")
-    print(f"   📝 Justification : {justification}")
-    print(f"   📊 PRO scores    : NLI={pro_nli:.3f}  SEM={pro_sem:.3f}")
-    print(f"   📊 CON scores    : NLI={con_nli:.3f}  SEM={con_sem:.3f}")
+    print(f"\n   📋 Summary: {conv_summary[:200]}")
 
     return {
-        "convergence_summary": conv_summary,       # clean, no winner embedded
+        "convergence_summary": conv_summary,
         "winner":              winner,
-        "pro_nli_score":       pro_nli,
-        "con_nli_score":       con_nli,
-        "pro_semantic_score":  pro_sem,
-        "con_semantic_score":  con_sem,
+        "pro_nli_score":       scores["pro_nli_score"],
+        "con_nli_score":       scores["con_nli_score"],
+        "pro_semantic_score":  scores["pro_semantic_score"],
+        "con_semantic_score":  scores["con_semantic_score"],
         "messages": [{"role": "convergence", "content": display_summary}],
     }
 
@@ -1003,21 +1105,29 @@ def verdict_node(state: OrchestratorState) -> dict:
 def create_orchestrator_graph():
     workflow = StateGraph(OrchestratorState)
 
-    workflow.add_node("moderator",         moderator_node)
-    workflow.add_node("debater1_arg",      debater1_arg_node)
-    workflow.add_node("debater2_arg",      debater2_arg_node)
-    workflow.add_node("debater1_rebuttal", debater1_rebuttal_node)
-    workflow.add_node("debater2_rebuttal", debater2_rebuttal_node)
-    workflow.add_node("convergence",       convergence_node)
-    workflow.add_node("verdict",           verdict_node)
+    workflow.add_node("moderator",           moderator_node)
+    workflow.add_node("debater1_arg",        debater1_arg_node)
+    workflow.add_node("score_pro_arg",       score_pro_arg_node)
+    workflow.add_node("debater2_arg",        debater2_arg_node)
+    workflow.add_node("score_con_arg",       score_con_arg_node)
+    workflow.add_node("debater1_rebuttal",   debater1_rebuttal_node)
+    workflow.add_node("score_pro_rebuttal",  score_pro_rebuttal_node)
+    workflow.add_node("debater2_rebuttal",   debater2_rebuttal_node)
+    workflow.add_node("score_con_rebuttal",  score_con_rebuttal_node)
+    workflow.add_node("convergence",         convergence_node)
+    workflow.add_node("verdict",             verdict_node)
 
-    workflow.add_edge("moderator",         "debater1_arg")
-    workflow.add_edge("debater1_arg",      "debater2_arg")
-    workflow.add_edge("debater2_arg",      "debater1_rebuttal")
-    workflow.add_edge("debater1_rebuttal", "debater2_rebuttal")
-    workflow.add_edge("debater2_rebuttal", "convergence")
-    workflow.add_edge("convergence",       "verdict")
-    workflow.add_edge("verdict",           END)
+    workflow.add_edge("moderator",          "debater1_arg")
+    workflow.add_edge("debater1_arg",       "score_pro_arg")       # score PRO arg
+    workflow.add_edge("score_pro_arg",      "debater2_arg")
+    workflow.add_edge("debater2_arg",       "score_con_arg")       # score CON arg
+    workflow.add_edge("score_con_arg",      "debater1_rebuttal")
+    workflow.add_edge("debater1_rebuttal",  "score_pro_rebuttal")  # score PRO rebuttal
+    workflow.add_edge("score_pro_rebuttal", "debater2_rebuttal")
+    workflow.add_edge("debater2_rebuttal",  "score_con_rebuttal")  # score CON rebuttal
+    workflow.add_edge("score_con_rebuttal", "convergence")
+    workflow.add_edge("convergence",        "verdict")
+    workflow.add_edge("verdict",            END)
 
     workflow.set_entry_point("moderator")
     return workflow.compile()
@@ -1075,6 +1185,10 @@ def run_debate(
         "d2_rebuttal_logical_flaws":  [],
         "d2_rebuttal_counter_points": [],
         "d2_rebuttal_evidence":       {},
+        "score_pro_arg":      0.0,
+        "score_con_arg":      0.0,
+        "score_pro_rebuttal": 0.0,
+        "score_con_rebuttal": 0.0,
         "convergence_summary": "",
         "winner":              "",
         "pro_nli_score":       0.0,
@@ -1093,8 +1207,12 @@ def run_debate(
     print(f"Topic              : {topic}")
     print(f"Max Arg Iterations : {max_arg_iterations}")
     print(
-        "\nPipeline: moderator → debater1_arg (PRO) → debater2_arg (CON)\n"
-        "        → debater1_rebuttal → debater2_rebuttal → convergence → verdict\n"
+        "\nPipeline:\n"
+        "  moderator → debater1_arg → score_pro_arg\n"
+        "           → debater2_arg → score_con_arg\n"
+        "           → debater1_rebuttal → score_pro_rebuttal\n"
+        "           → debater2_rebuttal → score_con_rebuttal\n"
+        "           → convergence → verdict\n"
         f"\nModels:\n"
         f"  LLM  : mistralai/Mistral-7B-Instruct-v0.3 (local)\n"
         f"  NLI  : {_NLI_MODEL_ID}\n"
@@ -1147,6 +1265,15 @@ def run_debate(
         "convergence_summary": final_state["convergence_summary"],
         "winner":              final_state["winner"],
 
+        "moderator_scores": {
+            "pro_arg":      final_state["score_pro_arg"],
+            "con_arg":      final_state["score_con_arg"],
+            "pro_rebuttal": final_state["score_pro_rebuttal"],
+            "con_rebuttal": final_state["score_con_rebuttal"],
+            "pro_total":    final_state["score_pro_arg"] + final_state["score_pro_rebuttal"],
+            "con_total":    final_state["score_con_arg"] + final_state["score_con_rebuttal"],
+        },
+
         "local_scores": {
             "pro_nli":      final_state["pro_nli_score"],
             "con_nli":      final_state["con_nli_score"],
@@ -1194,6 +1321,15 @@ def run_debate(
           f"Semantic={result['local_scores']['con_semantic']:.3f}  "
           f"Evidence={len(result['con']['evidence'])} piece(s)")
 
+    ms = result["moderator_scores"]
+    print(f"\n📊 Moderator Scorecard:")
+    print(f"   PRO argument  : {ms['pro_arg']:.1f}/10")
+    print(f"   CON argument  : {ms['con_arg']:.1f}/10")
+    print(f"   PRO rebuttal  : {ms['pro_rebuttal']:.1f}/10")
+    print(f"   CON rebuttal  : {ms['con_rebuttal']:.1f}/10")
+    print(f"   ─────────────────────────────")
+    print(f"   PRO total     : {ms['pro_total']:.1f}/20")
+    print(f"   CON total     : {ms['con_total']:.1f}/20")
     print(f"\n⚖️  Winner     : {result['winner']}")
     print(f"📋 Convergence: {result['convergence_summary']}")
 

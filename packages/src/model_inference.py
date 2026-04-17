@@ -21,7 +21,7 @@ except ImportError:
 # ============================================================
 # Model Architecture (must match training)
 # ============================================================
-
+# Set this to the GPU ID you want to use (e.g., "0", "1", etc.) or "" for CPU
 class ArgumentQualityModel(nn.Module):
     def __init__(self, input_dim: int = 4, dropout_rate: float = 0.3):
         super().__init__()

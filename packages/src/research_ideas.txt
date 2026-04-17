@@ -1,0 +1,3 @@
+We probable need to change the architechture
+to find architechtural flaws : https://claude.ai/share/a2d2be9b-ddfa-4891-859f-c4b44d06ddc8
+We might need 

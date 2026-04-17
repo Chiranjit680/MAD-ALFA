@@ -1,0 +1,1463 @@
+index,question,expected,verdict,correct,score,avg_score,reasoning
+0,Are group 2 innate lymphoid cells ( ILC2s ) increased in chronic rhinosinusitis with nasal polyps or eosinophilia?,yes,yes,True,9.0,9.0,"The debate verdict accurately reflects the ground truth, with a strong factual alignment and logical reasoning that supports the role of ILC2s in chronic rhinosinusitis with nasal polyps and eosinophilia."
+1,Does vagus nerve contribute to the development of steatohepatitis and obesity in phosphatidylethanolamine N-methyltransferase deficient mice?,yes,yes,True,9.0,9.0,"The debate verdict is highly aligned with the ground truth in terms of factual accuracy, but lacks a clear explanation of the logical reasoning process behind the conclusion."
+2,Does psammaplin A induce Sirtuin 1-dependent autophagic cell death in doxorubicin-resistant MCF-7/adr human breast cancer cells and xenografts?,yes,yes,True,9.0,9.0,"The debate verdict accurately reflects the ground truth, with strong factual alignment and logical reasoning that effectively connects Psammaplin A's effects to Sirtuin 1-dependent autophagic cell death."
+3,Is methylation of the FGFR2 gene associated with high birth weight centile in humans?,yes,no,False,2.0,7.25,"The debate verdict ""no"" does not align with the ground truth, which suggests a plausible association between FGFR2 and high birth weight centile, and lacks logical reasoning to support its claim."
+4,Do tumor-infiltrating immune cell profiles and their change after neoadjuvant chemotherapy predict response and prognosis of breast cancer?,yes,no,False,0.0,5.8,"The debate verdict is entirely incorrect as it contradicts the ground truth, which clearly states that tumor-infiltrating immune cell profiles and their change after neoadjuvant chemotherapy do predict response and prognosis of breast cancer."
+5,Is hidradenitis suppurativa a systemic disease with substantial comorbidity burden : a chart-verified case-control analysis?,yes,yes,True,0.0,4.833333333333333,"The debate verdict is entirely incorrect as it contradicts the ground truth, which states that control subjects were not validated for absence of HS and comorbidity validation was not performed for either group."
+6,Does reference range for serum and salivary testosterone in young men of Mediterranean region?,yes,no,False,8.0,5.285714285714286,"The debate verdict is factually aligned with the ground truth, but lacks logical reasoning quality as it simply states ""no"" without providing any explanation or justification."
+7,Are secretory phospholipases A2 secreted from ciliated cells and increase mucin and eicosanoid secretion from goblet cells?,yes,yes,True,9.0,5.75,"The debate verdict accurately aligns with the ground truth, but lacks explicit mention of eicosanoids, resulting in a slight deduction from the maximum score."
+8,Is admission hyperglycemia associated with failed reperfusion following fibrinolytic therapy in patients with STEMI : results of a retrospective study?,yes,no,False,0.0,5.111111111111111,"The debate verdict is completely opposite to the ground truth, indicating a lack of factual alignment and logical reasoning quality."
+9,Do systematic Reviews Published in Emergency Medicine Journals Routinely Search Clinical Trials Registries : A Cross-Sectional Analysis?,no,yes,False,2.0,4.8,"The debate verdict incorrectly states that systematic reviews published in emergency medicine journals do routinely include searches of clinical trials registries, contradicting the ground truth."
+10,Do obese patients with idiopathic pulmonary fibrosis have a higher 90-day mortality risk with bilateral lung transplantation?,yes,no,False,8.0,5.090909090909091,"The debate verdict is factually aligned with the ground truth, but lacks detailed logical reasoning to support its conclusion."
+11,Does promoter variant rs2301228 on the neural cell adhesion molecule 1 gene confer risk of schizophrenia in Han Chinese?,yes,no,False,0.0,4.666666666666667,"The debate verdict is ""no"", which contradicts the ground truth that provides direct evidence for NCAM1 as a susceptibility gene for schizophrenia."
+12,Are [ Higher nitric oxide levels associated with disease activity in Egyptian rheumatoid arthritis patients ]?,yes,yes,True,10.0,5.076923076923077,"The debate verdict perfectly aligns with the ground truth, accurately stating that higher nitric oxide levels are associated with disease activity in Egyptian rheumatoid arthritis patients."
+13,Does increased Syk phosphorylation lead to overexpression of TRAF6 in peripheral B cells of patients with systemic lupus erythematosus?,yes,yes,True,9.0,5.357142857142857,"The debate verdict accurately aligns with the ground truth, but lacks explicit mention of increased Syk phosphorylation leading to TRAF6 overexpression, thus deducting 1 point for clarity."
+14,Are reasons why erupted third molars extracted in a public university in Mexico?,yes,yes,True,8.0,5.533333333333333,"The debate verdict aligns with the ground truth in terms of demographic characteristics, but lacks specificity regarding the primary reasons for extraction, resulting in a moderate score."
+15,Does the Boston keratoprosthesis provide a wide depth of focus?,yes,yes,True,9.0,5.75,"The debate verdict is largely in line with the ground truth, but lacks a detailed explanation of the small pupil diameter's role in the KPro's pseudoaccommodation."
+16,Do large portion sizes increase bite size and eating rate in overweight women?,yes,yes,True,9.0,5.9411764705882355,"The debate verdict accurately reflects the ground truth, with a strong alignment in factual content, but slightly lacks depth in logical reasoning."
+17,Are routine preoperative restaging CTs after neoadjuvant chemoradiation for locally advanced rectal cancer low yield : a retrospective case study?,yes,no,False,8.0,6.055555555555555,"The debate verdict is factually aligned with the ground truth, but lacks a clear logical explanation for why routine preoperative restaging CTs are not low yield."
+18,Does pancreatic polypeptide regulate glucagon release through PPYR1 receptors expressed in mouse and human alpha-cells?,yes,yes,True,9.0,6.2105263157894735,"The debate verdict accurately aligns with the ground truth, but lacks explicit mention of PPYR1 receptors' direct involvement in regulating glucagon release in alpha-cells."
+19,Do two decades of British newspaper coverage regarding attempt cardiopulmonary resuscitation decisions : Lessons for clinicians?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+20,Is increased time from neoadjuvant chemoradiation to surgery associated with higher pathologic complete response rates in esophageal cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+21,Is epileptic focus localization based on resting state interictal MEG recordings feasible irrespective of the presence or absence of spikes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+22,Does seminal Helicobacter pylori treatment improve sperm motility in infertile asthenozoospermic men?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+23,Does a migrating ciliary gate compartmentalize the site of axoneme assembly in Drosophila spermatids?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+24,Is individual Public Transportation Accessibility Positively Associated with Self-Reported Active Commuting?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+25,Is congenital penile pathology associated with abnormal development of the dartos muscle : a prospective study of primary penile surgery at a tertiary referral center?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+26,Is δNp63 expression a protective factor of progression in clinical high grade T1 bladder cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+27,Do high levels of procalcitonin in the early phase after pediatric liver transplantation indicate poor postoperative outcome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+28,Is decreased expression of liver-type fatty acid-binding protein associated with poor prognosis in hepatocellular carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+29,Does ephrin type-B receptor 4 activation reduce neointimal hyperplasia in human saphenous vein in vitro?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+30,Are low serum levels of vitamin D associated with post-stroke depression?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+31,Are polymorphisms near TBX5 and GDF7 associated with increased risk for Barrett 's esophagus?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+32,"Does danzhi Xiaoyao San ameliorate depressive-like behavior by shifting toward serotonin via the downregulation of hippocampal indoleamine 2,3-dioxygenase?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+33,Is p63 more sensitive and specific than 34βE12 to differentiate adenocarcinoma of prostate from cancer mimickers?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+34,Does poor sleep predict symptoms of depression and disability retirement due to depression?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+35,Are phospholipase C epsilon 1 ( PLCE1 ) haplotypes associated with increased risk of gastric cancer in Kashmir Valley?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+36,Is tGFBI Expression in Cancer Stromal Cells Associated with Poor Prognosis and Hematogenous Recurrence in Esophageal Squamous Cell Carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+37,Are autoimmune features associated with chronic antibiotic-refractory pouchitis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+38,Does identical ATP1A3 mutation cause alternating hemiplegia of childhood and rapid-onset dystonia parkinsonism phenotypes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+39,Does metabolic control analysis of the Trypanosoma cruzi peroxide detoxification pathway identify tryparedoxin as a suitable drug target?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+40,Is basal Flt1 tyrosine kinase activity a positive regulator of endothelial survival and vascularization during zebrafish embryogenesis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+41,Do immunizations with hepatitis B viral antigens and a TLR7/8 agonist adjuvant induce antigen-specific immune responses in HBV-transgenic mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+42,Are lobar microbleeds associated with a decline in executive functioning in older adults?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+43,Is self-reported physical activity in smoking pre-cessation a protective factor against relapse for all?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+44,Is breathlessness at rest the dominant presentation of patients admitted with heart failure?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+45,Is delayed duodenal stump blow-out following total gastrectomy for cancer : Heightened awareness for the continued presence of the surgical past in the present the key to a successful duodenal stump disruption management . A case report?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+46,Are lipoprotein phospholipase A2 mass and activity associated with the diagnosis of acute brain ischemia?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+47,Is osteoprotegerin associated with subclinical left ventricular systolic dysfunction in diabetic hypertensive patients : a speckle tracking study?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+48,Do a new model for the standardization of experimental burn wounds?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+49,Does circulating atrial natriuretic peptide genetic association study identify a novel gene cluster associated with stroke in whites?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+50,Do whole-genome sequencing and epidemiological analysis provide evidence for cross-transmission of mycobacterium abscessus in a cohort of pediatric cystic fibrosis patients?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+51,Are high Atopobium vaginae and Gardnerella vaginalis vaginal loads associated with preterm birth?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+52,"Is cD30 expression a novel prognostic indicator in extranodal natural killer/T-cell lymphoma , nasal type?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+53,Do [ Clinical study on continuous plasma filtration absorption treatment for burn sepsis ]?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+54,Do [ Perinatal variables from newborns of Aymara mothers suggest a genetic adaptation to high altitude ]?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+55,Is 25-hydroxyvitamin D status associated with chronic cerebral small vessel disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+56,Is cD133-positive tumor cell content a predictor of early recurrence in colorectal cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+57,Does traumatic brain injury induce neuroinflammation and neuronal degeneration that is associated with escalated alcohol self-administration in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+58,Does maternal undernutrition induce premature reproductive senescence in adult female rat offspring?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+59,Does granulocyte colony-stimulating factor prevent loss of spermatogenesis after sterilizing busulfan chemotherapy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+60,Is saikosaponin b2 a naturally occurring terpenoid that efficiently inhibits hepatitis C virus entry?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+61,Does autotaxin activity have a high accuracy to diagnose intrahepatic cholestasis of pregnancy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+62,Does a dedicated research program increase the quantity and quality of orthopaedic resident publications?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+63,Does cationic Nanogel-mediated Runx2 and Osterix siRNA Delivery decrease Mineralization in MC3T3 Cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+64,Do no sex differences exist in posterior condylar offsets of the knee?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+65,Do gene polymorphisms of stress hormone and cytokine receptors associate with immunomodulatory profile and psychological measurement?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+66,Does housing temperature influence the pattern of heat shock protein induction in mice following mild whole body hyperthermia?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+67,Does intra-articular injection of synthetic microRNA-210 accelerate avascular meniscal healing in rat medial meniscal injured model?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+68,Does pRMT5 enhance generation of induced pluripotent stem cells from dairy goat embryonic fibroblasts via down-regulation of p53?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+69,Do minimally invasive retroperitoneoscopic surgery for psoas abscess with thoracolumbar tuberculosis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+70,Is cartilage thickness at the posterior medial femoral condyle increased in femorotibial knee osteoarthritis : a cross-sectional CT arthrography study ( Part 2 )?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+71,Does loss of Frzb and Sfrp1 differentially affect joint homeostasis in instability-induced osteoarthritis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+72,Does tetraploid complementation prove pluripotency of induced pluripotent stem cells derived from adipose tissue?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+73,Does implementation of the acute care surgery model provide benefits in the surgical treatment of the acute appendicitis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+74,Is radiofrequency ablation plus devascularization the preferred treatment of hepatocellular carcinoma with esophageal varices?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+75,Is enhancement of in vitro activity of tuberculosis drugs by addition of thioridazine reflected by improved in vivo therapeutic efficacy?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+76,Do youth walking and biking rates vary by environments around 5 Louisiana schools?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+77,Does blockade of Central Angiotensin II AT1 Receptor protect the Brain from Ischemia/Reperfusion Injury in Normotensive Rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+78,Does syngap1 haploinsufficiency damage a postnatal critical period of pyramidal cell structural maturation linked to cortical circuit assembly?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+79,Is pentraxin 3 reduced in bipolar disorder?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+80,Are human enteroviruses the cause of neurological impairments in children at the Korle-Bu Teaching Hospital?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+81,Does a whole blood-based perfusate provide superior preservation of myocardial function during ex vivo heart perfusion?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+82,Is elevated immune monitoring early after cardiac transplantation associated with increased plaque progression by intravascular ultrasound?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+83,Are successional changes in the chicken cecal microbiome during 42 days of growth independent of organic acid feed additives?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+84,Does resveratrol enhance palmitate-induced ER stress and apoptosis in cancer cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+85,Is cDK1 and CDK2 activity a strong predictor of renal cell carcinoma recurrence?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+86,Is torsion of the optic nerve head a prominent feature of normal-tension glaucoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+87,Is endo first appropriate in some patients with critical limb ischemia because `` bridges are burned ''?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+88,Is unrecognized arteriosclerosis associated with wound complications after below-knee amputation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+89,Does hydrogen sulfide reduce inflammation following abdominal aortic occlusion in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+90,Do seed bank dynamics govern persistence of Brassica hybrids in crop and natural habitats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+91,Is actinic keratosis with atypical basal cells ( AK I ) the most common lesion associated with invasive squamous cell carcinoma of the skin?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+92,Does high-intensity intermittent exercise increase pulmonary interstitial edema at altitude but not at simulated altitude?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+93,Does mild cognitive dysfunction affect diabetes mellitus control in minority elderly adults?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+94,Are anti-high mobility group box 1 ( anti-HMGB1 ) antibodies related to the occurrence of cutaneous lesions in systemic lupus erythematosus?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+95,Does alcohol disrupt levels and function of the cystic fibrosis transmembrane conductance regulator to promote development of pancreatitis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+96,Does blood viscosity but not shear stress associate with delayed flow-mediated dilation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+97,Does hypercholesterolemia increase the production of leukotriene B4 in neutrophils by enhancing the nuclear localization of 5-lipoxygenase?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+98,Do molecular signatures of mood stabilisers highlight the role of the transcription factor REST/NRSF?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+99,Does preconditioning of skeletal myoblast-based engineered tissue constructs enable functional coupling to myocardium in vivo?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+100,Does treatment with egg antigens of Schistosoma mansoni ameliorate experimental colitis in mice through a colonic T-cell-dependent mechanism?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+101,Is abnormal left ventricular contractile response to exercise in the absence of obstructive coronary artery disease associated with resting left ventricular long-axis dysfunction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+102,Is sleep efficiency ( but not sleep duration ) of healthy school-age children associated with grades in math and languages?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+103,Are vitamin D levels and bone turnover markers related to non-alcoholic fatty liver disease in severely obese patients?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+104,Are outcomes of abdominal wall reconstruction with acellular dermal matrix affected by wound contamination?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+105,Does airway pressure release ventilation reduce conducting airway micro-strain in lung injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+106,Do a simplified method of preventing implant hex drive from aspiration or accidental swallowing during stage two implant recovery?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+107,Is late onset spinal motor neuronopathy caused by mutation in CHCHD10?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+108,Does low perfusion index affect the difference in glucose level between capillary and venous blood?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+109,Are multiple pathways responsible for anti-inflammatory and cardiovascular activities of Hordeum vulgare L?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+110,Does [ ITF increase the transcriptional activity of ITF promoter via the JAK-STAT3 signal transduction pathway ]?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+111,Does clinical evaluation of pazopanib eye drop versus ranibizumab intravitreal injections in subjects with neovascular age-related macular degeneration?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+112,Does long-term treadmill exercise attenuate tau pathology in P301S tau transgenic mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+113,Does alpha and beta EEG power reflect L-dopa acute administration in parkinsonian patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+114,Does subclinical left ventricular dysfunction by echocardiographic speckle-tracking strain analysis relate to outcome in sarcoidosis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+115,Are guanine quadruplexes formed by specific regions of human transposable elements?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+116,"Is circulating soluble LR11 , a novel marker of smooth muscle cell proliferation , enhanced after coronary stenting in response to vascular injury?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+117,Are de novo donor-specific HLA antibodies associated with early and high-grade bronchiolitis obliterans syndrome and death after lung transplantation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+118,Does a systematic review identify valid comorbidity indices derived from administrative health data?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+119,Do comparative metabolomics in vegans and omnivores reveal constraints on diet-dependent gut microbiota metabolite production?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+120,"Is disruption of SOX6 associated with a rapid-onset dopa-responsive movement disorder , delayed development , and dysmorphic features?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+121,Does capsular closure affect development of heterotopic ossification after hip arthroscopy?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+122,Do smoking and unstable hinge fractures cause delayed gap filling irrespective of early weight bearing after open wedge osteotomy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+123,Is topical clobetasol in conjunction with topical tretinoin effective in preventing scar formation after superficial partial-thickness burn ulcers of the skin : A retrospective study?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+124,Does the rate of hypo-osmotic challenge influence regulatory volume decrease ( RVD ) and mechanical properties of articular chondrocytes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+125,Does liver-specific deletion of augmenter of liver regeneration accelerate development of steatohepatitis and hepatocellular carcinoma in mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+126,Does transcriptome analysis of proton pump inhibitor-responsive esophageal eosinophilia reveal proton pump inhibitor-reversible allergic inflammation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+127,"Is a high normal thyroid-stimulating hormone associated with arterial stiffness , central systolic blood pressure , and 24-hour systolic blood pressure in males with treatment-naïve hypertension and euthyroid?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+128,Does rotenone impair autophagic flux and lysosomal functions in Parkinson 's disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+129,"Is interleukin-6 associated with obesity , central fat distribution , and disease severity in patients with acute pancreatitis?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+130,Is platelet activation associated with myocardial infarction in patients with pneumonia?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+131,Is fasting serum dipeptidyl peptidase-4 activity independently associated with alanine aminotransferase in type 1 diabetic patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+132,"Is initial combination therapy with metformin , pioglitazone and exenatide more effective than sequential add-on therapy in subjects with new-onset diabetes . Results from the Efficacy and Durability of Initial Combination Therapy for Type 2 Diabetes ( EDICT ) : a randomized trial?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+133,Does diet-induced obesity prevent the development of acute traumatic coagulopathy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+134,Do endothelial progenitor cells induce transplant arteriosclerosis via VEGFR-1/2 activity?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+135,Are elevated beta2-glycoprotein I-low-density lipoprotein levels associated with the presence of diabetic microvascular complications?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+136,Is bone marrow from blotchy mice dispensable to regulate blood copper and aortic pathologies but required for inflammatory mediator production in LDLR-deficient mice during chronic angiotensin II infusion?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+137,Are maternal salivary cortisol levels during pregnancy positively associated with overweight children?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+138,Is less advanced disease at initiation of salvage androgen deprivation therapy associated with decreased mortality following biochemical failure post-salvage radiation therapy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+139,Is low postoperative platelet count associated with negative outcome after liver resection for hepatocellular carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+140,Does early menarche increase the risk of Type 2 diabetes in young and middle-aged Korean women?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+141,Does twenty-four hour in-hospital congenital cardiac surgical coverage improve perioperative ECMO support outcomes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+142,Does early primary repair of tetralogy of Fallot lead to increased postoperative resource utilization?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+143,Are aggregate National Early Warning Score ( NEWS ) values more important than high scores for a single vital signs parameter for discriminating the risk of adverse outcomes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+144,Are plant communities on infertile soils less sensitive to climate change?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+145,Does licochalcone-A sensitize human esophageal carcinoma cells to TRAIL-mediated apoptosis by proteasomal degradation of XIAP?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+146,Is intranodal cytokeratin particles a predictive marker of efficacy for neoadjuvant therapies in patients with squamous cell carcinoma of the esophagus?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+147,Does iNKT/CD1d-antitumor immunotherapy significantly increase the efficacy of therapeutic CpG/peptide-based cancer vaccine?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+148,Is pseudomonas aeruginosa in CF and non-CF homes found predominantly in drains?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+149,Is increased expression of pleiotrophin a prognostic marker for patients with gastric cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+150,Does the CC-genotype of the cyclooxygenase-2 gene associate with decreased risk of nasopharyngeal carcinoma in a Tunisian population?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+151,Does a shoe insole delivering subsensory vibratory noise improve balance and gait in healthy elderly people?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+152,Do sleep spindle and slow wave frequency reflect motor skill performance in primary school-age children?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+153,Does the dual CCR5 and CCR2 inhibitor cenicriviroc redistribute HIV into extracellular space : implications for plasma viral load and intracellular DNA decline?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+154,Do our experiences on the reconstruction of lateral scalp burn alopecia with tissue expanders?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+155,Is prostate-specific antigen doubling time subsequent to radical prostatectomy a predictor of outcome following salvage external beam radiation therapy : a single-centre experience?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+156,Is head-shaft angle a risk factor for hip displacement in children with cerebral palsy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+157,Is implementation of a surgical intensive care unit service associated with improved outcomes for trauma patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+158,Does elevated amygdala activity during reappraisal anticipation predict anxiety in avoidant personality disorder?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+159,Does prenatal marijuana exposure predict marijuana use in young adulthood?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+160,Does nAIF1 inhibit gastric cancer cells migration and invasion via the MAPK pathways?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+161,Is cMV specific cytokine release assay in whole blood optimized by combining synthetic CMV peptides and toll like receptor agonists?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+162,Does light alcohol consumption play a protective role against non-alcoholic fatty liver disease in Japanese men with metabolic syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+163,Do genomic selection accuracies within and between environments and small breeding groups in white spruce?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+164,Do local and general anaesthesia influence outcome of transfemoral aortic valve implantation?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+165,Does multidrug resistant bacteriuria before percutaneous nephrolithotomy predict for postoperative infectious complications?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+166,Is higher fibrinogen level independently linked with the presence and severity of new-onset coronary atherosclerosis among Han Chinese population?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+167,Is the combination of pill count and self-reported adherence a strong predictor of first-line ART failure for adults in South Africa?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+168,Does microRNA-19a enhance proliferation of bronchial epithelial cells by targeting TGFβR2 gene in severe asthma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+169,"Are serum triglycerides , but not cholesterol or leptin , decreased in suicide attempters with mood disorders?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+170,Is soft drink consumption associated with depressive symptoms among adults in China?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+171,Is blood alcohol concentration negatively associated with gambling money won on the Iowa gambling task in naturalistic settings after controlling for trait impulsivity and alcohol tolerance?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+172,Does sexual activity predispose to reflux episodes in patients with gastroesophageal reflux disease?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+173,Is vascular injury associated with increased mortality in winter sports trauma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+174,Is a common variant in RAB27A gene associated with fractional exhaled nitric oxide levels in adults?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+175,Does a dietary phytochemical blend prevent liver damage associated with adipose tissue mobilization in ovariectomized rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+176,Is real-time three-dimensional transesophageal echocardiography useful for percutaneous closure of multiple secundum atrial septal defects?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+177,Do longitudinal patterns of cortisol regulation differ in maltreated and nonmaltreated children?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+178,Does substance Use and Related harm Among Adolescents With and Without Traumatic Brain Injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+179,Is eGFR-TKI effective regardless of treatment timing in pulmonary adenocarcinoma with EGFR mutation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+180,Is diabetes associated with increased risk of venous thromboembolism : a systematic review and meta-analysis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+181,Is invasion of uterine cervical squamous cell carcinoma cells facilitated by locoregional interaction with cancer-associated fibroblasts via activating transforming growth factor-beta?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+182,Is increased serum cancer antigen-125 a marker for severity of deep endometriosis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+183,Do detailed characterization of tumor infiltrating lymphocytes in two distinct human solid malignancies show phenotypic similarities?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+184,Do long-term lung cancer survivors have permanently decreased quality of life after surgery?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+185,Does pregestational maternal obesity impair endocrine pancreas in male F1 and F2 progeny?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+186,Does chloroquine enhance temozolomide cytotoxicity in malignant gliomas by blocking autophagy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+187,Is long-term therapy with temozolomide a feasible option for newly diagnosed glioblastoma : a single-institution experience with as many as 101 temozolomide cycles?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+188,Is thiazide-induced hyponatraemia associated with increased water intake and impaired urea-mediated water excretion at low plasma antidiuretic hormone and urine aquaporin-2?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+189,Is weight based heparin dosing for thromboembolic disease associated with earlier anticoagulation in surgical patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+190,Does prospective international cohort study demonstrate inability of interim PET to predict treatment failure in diffuse large B-cell lymphoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+191,Does fungal metabolite myriocin promote human herpes simplex virus-2 infection?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+192,Does prenatal zinc reduce stress response in adult rat offspring exposed to lipopolysaccharide during gestation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+193,Are global histone H3 lysine 27 triple methylation levels reduced in vessels with advanced atherosclerotic plaques?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+194,Does corn silk maysin induce apoptotic cell death in PC-3 prostate cancer cells via mitochondria-dependent pathway?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+195,Do some Strychnos spinosa ( Loganiaceae ) leaf extracts and fractions have good antimicrobial activities and low cytotoxicities?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+196,Does maternal immune activation in nonhuman primates alter social attention in juvenile offspring?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+197,Does atractylodes macrocephala Koidz stimulate intestinal epithelial cell migration through a polyamine dependent mechanism?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+198,Does chronic exercise normalize changes in Cav 1.2 and KCa 1.1 channels in mesenteric arteries from spontaneously hypertensive rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+199,Does cXCR3 antagonist VUF10085 bound to an intrahelical site distinct from that of the broad spectrum antagonist TAK-779?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+200,Does prolonged P wave duration predict stroke mortality among type 2 diabetic patients with prevalent non-major macrovascular disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+201,Do central adenosine A1 and A2A receptors mediate the antinociceptive effects of neuropeptide S in the mouse formalin test?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+202,Does experimental diabetes mellitus type 1 increase hippocampal content of kynurenic acid in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+203,Does blockade of p38 mitogen-activated protein kinase pathway ameliorate delayed gastric emptying in streptozotocin-induced diabetic rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+204,Is high level of plasma matrix metalloproteinase-11 associated with clinicopathological characteristics in patients with oral squamous cell carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+205,Is interferon lambda-3 associated with clinical outcome in patients with HCV-induced compensated cirrhosis : a long-term cohort study?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+206,Does dorsomedial Prefrontal Cortex mediate the Impact of Serotonin Transporter Linked Polymorphic Region Genotype on Anticipatory Threat Reactions?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+207,Does intensity-modulated whole pelvic radiotherapy provide effective dosimetric outcomes for cervical cancer treatment with lower toxicities?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+208,Does treatment with anti-C5a antibody improve the outcome of H7N9 virus infection in African green monkeys?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+209,"Are socioeconomic inequalities still a barrier to full child vaccine coverage in the Brazilian Amazon : a cross-sectional study in Assis Brasil , Acre , Brazil?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+210,Does mental fatigue affect maximal anaerobic exercise performance?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+211,Is tP53 Pro72 allele enriched in oral tongue cancer and frequently mutated in esophageal cancer in India?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+212,Does α-Enolase play a catalytically independent role in doxorubicin-induced cardiomyocyte apoptosis and mitochondrial dysfunction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+213,Do a qualitative study of the background and in-hospital medicolegal response to female burn injuries in India?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+214,Is african-american race a predictor of seminal vesicle invasion after radical prostatectomy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+215,Is self-rated health associated with the length of stay at the intensive care unit and hospital following cardiac surgery?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+216,Is integrin-based meningioma cell migration promoted by photon but not by carbon-ion irradiation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+217,Does early-life stress selectively affect gastrointestinal but not behavioral responses in a genetic model of brain-gut axis dysfunction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+218,Are historic and current hepatitis B viral DNA and quantitative HBsAg level associated with cirrhosis in non-Asian women with chronic hepatitis B?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+219,Does patatin-related phospholipase pPLAIIIδ influence auxin-responsive cell morphology and organ size in Arabidopsis and Brassica napus?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+220,Does histoscanning have low sensitivity and specificity for seminal vesicle invasion?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+221,Is low percentage of free prostate-specific antigen ( PSA ) a strong predictor of later detection of prostate cancer among Japanese men with serum levels of total PSA of 4.0 ng/mL or less?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+222,"Is permanent His-bundle pacing feasible , safe , and superior to right ventricular pacing in routine clinical practice?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+223,Are clinical and serum-based markers associated with death within 1 year of de novo implant in primary prevention ICD recipients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+224,Does astaxanthin prevent TGFβ1-induced pro-fibrogenic gene expression by inhibiting Smad3 activation in hepatic stellate cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+225,Is vitamin D deficiency in mycosis fungoides and Sézary syndrome patients similar to other cancer patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+226,Does genome wide association study identify variants in NBEA associated with migraine in bipolar disorder?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+227,Is nASH resolution associated with improvements in HDL and triglyceride levels but not improvement in LDL or non-HDL-C levels?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+228,Is aberrant P-cadherin expression associated to aggressive feline mammary carcinomas?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+229,Does casticin inhibit COX-2 and iNOS expression via suppression of NF-κB and MAPK signaling in lipopolysaccharide-stimulated mouse macrophages?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+230,Do transcriptome sequencing and comparative analysis reveal long-term flowing mechanisms in Hevea brasiliensis latex?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+231,Does cannabidiol fail to reverse hypothermia or locomotor suppression induced by Δ ( 9 ) -tetrahydrocannabinol in Sprague-Dawley rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+232,Does miR-1228 promote the proliferation and metastasis of hepatoma cells through a p53 forward feedback loop?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+233,Does over-expression of small ubiquitin-like modifier proteases 1 predict chemo-sensitivity and poor survival in non-small cell lung cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+234,Is wnt signaling involved in 6-benzylthioinosine-induced AML cell differentiation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+235,Does ginsenoside Rg3 improve erectile function in streptozotocin-induced diabetic rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+236,Does serum alanine aminotransferase predict the histological course of non-alcoholic steatohepatitis in Japanese patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+237,Does hepatic Notch2 deficiency lead to bile duct agenesis perinatally and secondary bile duct formation after weaning?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+238,Does recipient T cell TIM-3 and hepatocyte galectin-9 signalling protect mouse liver transplants against ischemia-reperfusion injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+239,Does contrast enhancement pattern on multidetector CT predict malignancy in pancreatic endocrine tumours?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+240,Does ketamine inhibit proliferation of neural stem cell from neonatal rat hippocampus in vitro?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+241,Does iTRAQ-based quantitative proteome and phosphoprotein characterization reveal the central metabolism changes involved in wheat grain development?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+242,Are low serum 25-hydroxyvitamin d concentrations associated with increased risk for melanoma and unfavourable prognosis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+243,Does [ Descriptive study of healthcare professionals ' management of tick bite ]?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+244,Do left ventricular end-diastolic pressure and ejection fraction correlate independently with high-sensitivity cardiac troponin-T concentrations in stable heart failure?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+245,Does image-guided placement of long-term central venous catheters reduce complications and cost?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+246,Does exosome-mediated transfer of miR-10b promote cell invasion in breast cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+247,Does biolimus-eluting stent with biodegradable polymer improve clinical outcomes in patients with acute myocardial infarction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+248,Does triptolide inhibit TGF-β1-induced cell proliferation in rat airway smooth muscle cells by suppressing Smad signaling?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+249,Are aerobic capacity and upper limb strength reduced in women diagnosed with breast cancer : a systematic review?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+250,Is same-day intrauterine device placement rarely complicated by pelvic infection?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+251,Do obese first-degree relatives of patients with type 2 diabetes with elevated triglyceride levels exhibit increased β-cell function?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+252,Do identification of methicillin-resistant Staphylococcus aureus ( MRSA ) strains isolated from burn patients by multiplex PCR?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+253,Is coexpression of IQ-domain GTPase-activating protein 1 ( IQGAP1 ) and Dishevelled ( Dvl ) correlated with poor prognosis in non-small cell lung cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+254,Do ethnobotanical survey of medicinal plants used for pregnant women׳s health conditions in Menoua division-West Cameroon?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+255,Does shexiang Tongxin dropping pill attenuate atherosclerotic lesions in ApoE deficient mouse model?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+256,Do aCTN3 R577X genotypes associate with Class II and deepbite malocclusions?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+257,Is percutaneous intervention of circumflex chronic total occlusions associated with worse procedural outcomes : insights from a Multicentre US Registry?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+258,Does fiber supplementation lower plasma p-cresol in chronic kidney disease patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+259,Do antiphospholipid antibodies correlate with stroke severity and outcome in patients with antiphospholipid syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+260,Are `` There bugs in condoms '' : Tanzanian close-to-community providers ' ability to offer effective adolescent reproductive health services?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+261,Does engineered heart tissue transplantation alter electrical-conduction function in rats with myocardial infarction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+262,Does protein kinase D1 deficiency promote differentiation in epidermal keratinocytes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+263,Is cD133 expression correlated with poor prognosis in colorectal cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+264,Does atomoxetine reduce hyperactive/impulsive behaviours in neurokinin-1 receptor 'knockout ' mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+265,Do pre-treatment serum total bilirubin level as an indicator of optimal CPT-11 dosage?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+266,Does the indole derivative NecroX-7 improve nonalcoholic steatohepatitis in ob/ob mice through suppression of mitochondrial ROS/RNS and inflammation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+267,Does fluorescent labelling of intestinal epithelial cells reveal independent long-lived intestinal stem cells in a crypt?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+268,Does noble-Collip Drum Trauma induce Disseminated Intravascular Coagulation But Not Acute Coagulopathy of Trauma-Shock?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+269,Does aminoguanidine inhibit ventricular fibrosis and remodeling process in isoproterenol-induced hypertrophied rat hearts by suppressing ROS and MMPs?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+270,Is biliary-enteric reconstruction with hepaticoduodenostomy following laparoscopic excision of choledochal cyst associated with better postoperative outcomes : a single-centre experience?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+271,Do international observational study of nutritional support in mechanically ventilated patients following burn injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+272,Is rs2070424 of the SOD1 gene associated with risk of Alzheimer 's disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+273,Is structural maintenance of chromosomes 4 a predictor of survival and a novel therapeutic target in colorectal cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+274,Is intermediate filament protein nestin expressed in developing meninges?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+275,Is dorsal plication without degloving safe and effective for correcting ventral penile deformities?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+276,Is work disability related to the presence of arthritis and not to a specific diagnosis . Results from a large early arthritis cohort in Argentina?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+277,Is the highly prevalent H3F3A mutation in giant cell tumours of bone shared by sporadic central giant cell lesion of the jaws?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+278,Is chronic thromboembolic pulmonary hypertension associated with iron overload?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+279,Does immunological profiling in chronic rhinosinusitis with nasal polyps reveal distinct VEGF and GM-CSF signatures during symptomatic exacerbations?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+280,Do adolescents and young adults with type 1 diabetes display a high prevalence of endothelial dysfunction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+281,Do azo pigments and quinacridones induce delayed hypersensitivity in red tattoos?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+282,Is neoadjuvant treatment response in negative nodes an important prognosticator after esophagectomy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+283,Do adult aortic valve interstitial cells have greater responses to toll-like receptor 4 stimulation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+284,Do pollen tube cell walls of wild and domesticated tomatoes contain arabinosylated and fucosylated xyloglucan?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+285,Do clinical events after cessation of lamivudine therapy in patients recovered from hepatitis B flare with hepatic decompensation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+286,Is miRNA-205 a candidate tumor suppressor that targets ZEB2 in renal cell carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+287,Does the functional SNP rs3746804 in C20orf54 modify susceptibility to esophageal squamous cell carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+288,Does soluble CD30 predict late acute rejection or safe tapering of immunosuppression in renal transplantation?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+289,"Is generalized , severe , chronic periodontitis associated with anemia of chronic disease : a pilot study in urban , Indian males?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+290,Does progressive periodontal disease have a simultaneous incremental elevation of gingival crevicular fluid and serum CRP levels?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+291,Is the anterior cingulate cortex a critical hub for pain-induced depression?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+292,Is the low level of glucagon-like peptide-1 ( glp-1 ) a risk factor of type 2 diabetes mellitus?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+293,Does shinzami Korean purple-fleshed sweet potato extract prevent ischaemia-reperfusion-induced liver damage in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+294,Does vagus nerve stimulation have antidepressant effects in the kainic acid model for temporal lobe epilepsy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+295,Is epidermal growth factor receptor mutation associated with longer local control after definitive chemoradiotherapy in patients with stage III nonsquamous non-small-cell lung cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+296,Is epidemic MRSA clone ST22-IV more resistant to multiple host- and environment-related stresses compared with ST228-I?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+297,Is virological failure after 1 year of first-line ART associated with HIV minority drug resistance in rural Cameroon?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+298,Is blood transfusion associated with recurrence of hepatocellular carcinoma after hepatectomy in Child-Pugh class A patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+299,Does transcutaneous oxygen tension measurements following peripheral transluminal angioplasty procedure have more specificity and sensitivity than ankle brachial index?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+300,Is obesity associated with increased postoperative complications after operative management of proximal humerus fractures?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+301,Is radiofrequency ablation a thyroid function-preserving treatment for patients with bilateral benign thyroid nodules?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+302,Does silence of MCL-1 upstream signaling by shRNA abrogate multiple myeloma growth?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+303,Does pulse oximetry measure a lower heart rate at birth compared with electrocardiography?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+304,Does brivaracetam differentially affect voltage-gated sodium currents without impairing sustained repetitive firing in neurons?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+305,Does ascorbic Acid ameliorate nicotine exposure induced impaired spatial memory performances in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+306,Are glutathione s-transferase m1 and t1 gene polymorphisms associated with increased risk of gestational diabetes mellitus development?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+307,Does heterologous expression of mutated HLA-G1 reduce alloreactivity of human dermal fibroblasts?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+308,Does a cluster-randomized trial show telephone peer coaching for parents reduces children 's asthma morbidity?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+309,Is lipoprotein internalisation induced by oncogenic AMPK activation essential to maintain glioblastoma cell growth?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+310,Are tools for assessing the content of guidelines needed to enable their effective use -- a systematic comparison?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+311,Is high blood eosinophil count a risk factor for future asthma exacerbations in adult persistent asthma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+312,Do phosphorus application and elevated CO2 enhance drought tolerance in field pea grown in a phosphorus-deficient vertisol?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+313,Do parental characteristics have a larger effect on children 's health behaviour than their body weight?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+314,Do elevated levels of preoperative circulating CD44⁺ lymphocytes and neutrophils predict poor survival for non-small cell lung cancer patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+315,Does cardiac-specific ablation of synapse-associated protein SAP97 in mice decrease potassium currents but not sodium current?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+316,Does imaging DNA damage allow detection of preneoplasia in the BALB-neuT model of breast cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+317,Does glioma-derived versican promote tumor expansion via glioma-associated microglial/macrophages Toll-like receptor 2 signaling?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+318,Is care of patients undergoing vascular surgery at safety net public hospitals associated with higher cost but similar mortality to nonsafety net hospitals?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+319,Does older age limit postbariatric surgery cognitive benefits : a preliminary investigation?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+320,Is self-reported sleep disturbance associated with Alzheimer 's disease risk in men?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+321,Does a group of segmental premotor interneurons regulate the speed of axial locomotion in Drosophila larvae?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+322,Do plasma membrane-targeted PIN proteins drive shoot development in a moss?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+323,Do axonal Charcot-Marie-Tooth disease patient-derived motor neurons demonstrate disease-specific phenotypes including abnormal electrophysiological properties?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+324,Does gastroprotective effect of the iridoid fraction from Barleria prionitis leave on experimentally-induced gastric ulceration?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+325,Does tetramethylpyrazine protect lymphocytes from radiation-induced apoptosis through nuclear factor-κB?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+326,Is persistent insomnia associated with mortality risk?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+327,Does vitamin E attenuate neurotoxicity induced by deltamethrin in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+328,Does glial cell line-derived neurotrophic factor promote β-catenin phosphorylation and nuclear translocation in glioma cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+329,Does statin treatment affect cytokine release and phagocytic activity in primary cultured microglia through two separable mechanisms?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+330,Are the Expression of RAC1 and Mineralocorticoid Pathway-Dependent Genes Associated With Different Responses to Salt Intake?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+331,Are statin medications associated with a lower probability of having an abnormal screening prostate-specific antigen result?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+332,Does systemic delivery of human bone marrow embryonic-like stem cells improve motor function of severely affected dystrophin/utrophin-deficient mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+333,Is uRG4 overexpression correlated with cervical cancer progression and poor prognosis in patients with early-stage cervical cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+334,Is fragmented QRS associated with frequency of premature ventricular contractions in patients without overt cardiac disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+335,Does adjustment of sensitisation and challenge protocols restore functional and inflammatory responses to ovalbumin in guinea-pigs?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+336,Is expression of growth arrest and DNA damage inducible 45a in human oral squamous cell carcinoma associated with tumor progression and clinical outcome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+337,Does alteration of inflammatory response by shock wave therapy lead to reduced calcification of decellularized aortic xenografts in mice†?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+338,Does multicenter immunohistochemical ALK-testing of non-small-cell lung cancer show high concordance after harmonization of techniques and interpretation criteria?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+339,Does the novel surfactant protein SP-H enhance the phagocytosis efficiency of macrophage-like cell lines U937 and MH-S?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+340,Does the rtPA increase MMP-9 activity in serum during ischaemic stroke?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+341,Does tRAIL receptor deletion in mice suppress the inflammation of nutrient excess?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+342,Are hospitalisation costs for infant bronchiolitis up to 20 times higher if intensive care is needed?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+343,Is hospital readmission associated with poor survival after esophagectomy for esophageal cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+344,Does polyphenol-enriched diet prevent coronary endothelial dysfunction by activating the Akt/eNOS pathway?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+345,Is malnutrition a prognostic factor in patients with hepatocellular carcinoma ( HCC )?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+346,Is histiocytoid Sweet syndrome infiltrated predominantly by M2-like macrophages?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+347,Is sinR a mutational target for fine-tuning biofilm formation in laboratory-evolved strains of Bacillus subtilis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+348,Does ancient DNA provide new insight into the maternal lineages and domestication of Chinese donkeys?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+349,Do a critical analysis of secondary overtriage to a Level I trauma center?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+350,Is fibromyalgia associated with coronary heart disease : a population-based cohort study?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+351,Do serum miRNA biomarkers serve as a fingerprint for proliferative diabetic retinopathy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+352,Does the usage of overtube have a favorable effect on endoscopic submucosal dissection?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+353,Do dehydroepiandrosterone and its sulfate predict the 5-year risk of coronary heart disease events in elderly men?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+354,Does aeromonas piscicola AH-3 express an extracellular collagenase with cytotoxic properties?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+355,Does preoperative anemia increase postoperative morbidity in elective cranial neurosurgery?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+356,Does endothelin-Bone morphogenetic protein type 2 receptor interaction induce pulmonary artery smooth muscle cell hyperplasia in pulmonary arterial hypertension?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+357,Do long-term results from the Contura multilumen balloon breast brachytherapy catheter phase 4 registry trial?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+358,Does selenium status in pregnancy influence children 's cognitive function at 1.5 years of age?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+359,Does dexmedetomidine reduce atrial fibrillation after lung cancer surgery?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+360,Does extracorporeal shockwave therapy improve short-term functional outcomes of shoulder adhesive capsulitis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+361,Do collateral flow and brain changes on computed tomography angiography predict infarct volume on early diffusion-weighted imaging?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+362,Do angiogenic microvascular endothelial cells release microparticles rich in tissue factor that promotes postischemic collateral vessel formation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+363,Does adenovirus-mediated NDRG2 inhibit the proliferation of human renal cell carcinoma cell line OS-RC-2 in vitro?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+364,Does introduction of an 8-aminooctanoic acid linker enhance uptake of 99mTc-labeled lactam bridge-cyclized α-MSH peptide in melanoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+365,Does bRCAness predict resistance to taxane-containing regimens in triple negative breast cancer during neoadjuvant chemotherapy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+366,Does classical swine fever virus induce oxidative stress in swine umbilical vein endothelial cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+367,Does e2F4 regulatory program predict patient survival prognosis in breast cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+368,Do long-term efficacy of the Baerveldt 250 mm2 compared with the Baerveldt 350 mm2 implant?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+369,"Is self-reported body fat change in HIV-infected men a marker of decline in physical health-related quality of life with aging , independent of co-morbidity?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+370,Does transcranial magnetic stimulation reveal cortical hyperexcitability in episodic cluster headache?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+371,Is motor cortical activity during motor tasks normal in patients with complex regional pain syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+372,Does peripheral group I metabotropic glutamate receptor activation lead to muscle mechanical hyperalgesia through TRPV1 phosphorylation in the rat?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+373,Does lipopolysaccharide preconditioning induce neuroprotection against early brain injury after experimental subarachnoid hemorrhage?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+374,Is loss of N-cadherin associated with loss of E-cadherin expression and poor outcomes of liver resection in hepatocellular carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+375,Does the dual mTORC1 and mTORC2 inhibitor PP242 show strong antitumor activity in a pheochromocytoma PC12 cell tumor model?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+376,Does s100A3 suppression inhibit in vitro and in vivo tumor growth and invasion of human castration-resistant prostate cancer cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+377,Does a common polymorphism within MSLN affect miR-611 binding site and soluble mesothelin levels in healthy people?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+378,Is [ Ischemia an independent predictive factor of chronic renal failure after partial nephrectomy in a solitary kidney in patients without pre-operative renal insufficiency ]?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+379,Does regional anesthesia improve outcome in patients undergoing proximal humerus fracture repair?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+380,"Are in patients with rheumatoid arthritis , Dickkopf-1 serum levels correlated with parathyroid hormone , bone erosions and bone mineral density?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+381,Does multimodal protocol reduce postoperative nausea and vomiting in patients undergoing Le Fort I osteotomy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+382,Is a high body mass index in esophageal cancer patients associated with adverse outcomes following esophagectomy?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+383,Are fascial closure after open abdomen : initial indication and early revisions decisive factors -- a retrospective cohort study?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+384,Does mR imaging relaxometry allow noninvasive characterization of in vivo differentiation of muscle precursor cells?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+385,Is higher fasting glucose next day after intravenous thrombolysis independently associated with poor outcome in acute ischemic stroke?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+386,"Is a newly developed mouse monoclonal SOX10 antibody a highly sensitive and specific marker for malignant melanoma , including spindle cell and desmoplastic melanomas?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+387,Is abdominal aortic diameter increased in males with a family history of abdominal aortic aneurysms : results from the Danish VIVA-trial?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+388,Does dual-specificity phosphatase 6 predict the sensitivity of progestin therapy for atypical endometrial hyperplasia?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+389,Does endoscopic transphenoidal surgery for acromegaly improve quality of life?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+390,"Is smoking history , and not depression , related to deficits in detection of happy and sad faces?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+391,Are fatty acid-amino acid conjugates essential for systemic activation of salicylic acid-induced protein kinase and accumulation of jasmonic acid in Nicotiana attenuata?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+392,Does deficiency in Nrf2 transcription factor decrease adipose tissue mass and hepatic lipid accumulation in leptin-deficient mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+393,Do bone Marrow Stromal Cells Inhibit the Activation of Liver Cirrhotic Fat-Storing Cells via Adrenomedullin Secretion?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+394,Does obesity increase risk of anticoagulation reversal failure with prothrombin complex concentrate in those with intracranial hemorrhage?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+395,Does rNA-seq analysis of the rat placentation site reveal maternal obesity-associated changes in placental and offspring thyroid hormone signaling?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+396,"Is serum free 1,25-dihydroxy-vitamin D more closely associated with fibroblast growth factor 23 than other vitamin D forms in chronic dialysis patients?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+397,Is synovial T cell hyporesponsiveness to myeloid dendritic cells reversed by preventing PD-1/PD-L1 interactions?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+398,Does microRNA-29b regulate migration in oral squamous cell carcinoma and its clinical significance?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+399,Are pre-transplant impedance measures of reflux associated with early allograft injury after lung transplantation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+400,Is lymphocyte inhibition compromised in mesenchymal stem cells from psoriatic skin?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+401,Does learning trajectories of children with special health care need across the severity spectrum?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+402,Does deep Sequencing the microRNA profile in rhabdomyosarcoma reveal down-regulation of miR-378 family members?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+403,Does health indicators associated with fall among middle-aged and older women enrolled in an evidence-based program?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+404,"Do women know best -- findings from a thematic analysis of 5,214 surveys of abortion care experience?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+405,Does unit support protect against sexual harassment and assault among national guard soldiers?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+406,Does the T-box transcription factor Brachyury promote renal interstitial fibrosis by repressing E-cadherin expression?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+407,Does pneumonia Pathogen Characterization be an Independent Determinant of Hospital Readmission?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+408,Does anemia on admission predict short- and long-term outcomes in patients with acute ischemic stroke?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+409,Does obstructive sleep apnea syndrome increase pedestrian injury risk in children?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+410,Is implementation of continuous capnography associated with a decreased utilization of blood gases?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+411,Does blood PGC-1α Concentration predict Myocardial Salvage and Ventricular Remodeling After ST-segment Elevation Acute Myocardial Infarction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+412,Does endoscopic medial orbital fat decompression for proptosis in type 1 grave orbitopathy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+413,Does lidocaine potentiate the deleterious effects of triamcinolone acetonide on tenocytes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+414,Is pKCε a negative regulator of PVAT-derived vessel formation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+415,Does topical bFGF improve Secondary Lymphedema through Lymphangiogenesis in a Rat Tail Model?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+416,Is elevated serum creatine phosphokinase associated with mortality and inotropic requirement in critically injured adults?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+417,Does thalidomide control adipose tissue inflammation associated with high-fat diet-induced obesity in mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+418,Does mild-to-moderate intensity exercise improve cardiac autonomic drive in type 2 diabetes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+419,Is severity of hearing impairment positively associated with urine albumin excretion rate in patients with type 2 diabetes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+420,"Are in Rasmussen encephalitis , hemichannels associated with microglial activation linked to cortical pyramidal neuron coupling : a possible mechanism for cellular hyperexcitability?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+421,Do genome-wide ancestry patterns in Rapanui suggest pre-European admixture with Native Americans?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+422,Are serum neutrophil gelatinase-associated lipocalin levels correlated with the complexity and the severity of atherosclerosis in acute coronary syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+423,Does early tracheostomy in trauma patients save time and money?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+424,Is troponin-I a predictor of a delayed diagnosis of atrial fibrillation in acute ischemic stroke and transient ischemic attack?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+425,Does borax partially prevent neurologic disability and oxidative stress in experimental spinal cord ischemia/reperfusion injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+426,Does proteinuria predict postcardiotomy acute kidney injury in patients with preserved glomerular filtration rate?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+427,Does ultrasound shear wave elastography help discriminate low-grade from high-grade bowel wall fibrosis in ex vivo human intestinal specimens?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+428,Do b-type natriuretic peptides improve cardiovascular disease risk prediction in a cohort of women?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+429,Do novel markers predict death and organ failure following hemorrhagic shock?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+430,Is the diagnosis of inflammatory bowel disease often unsupported in clinical practice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+431,Does transjugular intrahepatic portosystemic shunt placement increase feasibility of colorectal surgery in cirrhotic patients with severe portal hypertension?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+432,Does pentoxifylline associated to hypertonic saline solution attenuate inflammatory process and apoptosis after intestinal ischemia/reperfusion in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+433,Is pattern of first recurrent lesions in pancreatic cancer : hepatic relapse associated with dismal prognosis and portal vein invasion?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+434,Does first registry result from the newly approved ACURATE TA™ TAVI system†?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+435,Does phosphorylation of BK channels modulate the sensitivity to hydrogen sulfide ( H2S )?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+436,"Is cognitive reserve a determinant of health-related quality of life in patients with cirrhosis , independent of covert hepatic encephalopathy and model for end-stage liver disease score?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+437,Does use of PET-CT for the assessment of treatment result in patients with sarcoidosis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+438,Does energy replacement using glucose increase postprandial lipemia after moderate intensity exercise?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+439,Is circulating retinol binding protein 4 associated with coronary lesion severity of patients with coronary artery disease?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+440,Is a high quality diet associated with reduced systemic inflammation in middle-aged individuals?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+441,Does pseudoaneurysm of head and neck vessels have been frequently observed in road side bomb blast victims?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+442,Is altered perineal microbiome associated with vulvovaginitis and urinary tract infection in preadolescent girls?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+443,Does cystamine improve functional recovery via axon remodeling and neuroprotection after stroke in mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+444,Does anti-IGF-1R monoclonal antibody inhibit the carcinogenicity activity of acquired trastuzumab-resistant SKOV3?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+445,Does metabolic efficiency promote protection from pressure overload in hearts expressing slow skeletal troponin I?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+446,Does preoperative neutrophil-to-lymphocyte ratio predict response to first-line platinum-based chemotherapy and prognosis in serous ovarian cancer?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+447,Are alcohol mixed with energy drinks robustly associated with patterns of problematic alcohol consumption among young adult college students?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+448,Does home and workplace built environment support for physical activity?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+449,Do young low-income ethnic minority children watch less television when their mothers regulate what they are viewing?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+450,Is clinically recognizable error rate after the transfer of comprehensive chromosomal screened euploid embryos low?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+451,Do human adenovirus Ad36 and its E4orf1 gene enhance cellular glucose uptake even in the presence of inflammatory cytokines?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+452,Does femoral insufficiency fractures in the elderly - excessive medial femoral bowing complicate intramedullary nailing?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+453,Do mutations in the Arabidopsis homoserine kinase gene DMR1 confer enhanced resistance to Fusarium culmorum and F. graminearum?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+454,Does ultrasound elastography correlate treatment response by antiviral therapy in patients with chronic hepatitis C?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+455,Does very urgent carotid endarterectomy increase the procedural risk?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+456,Does b7-H4 overexpression impair the immune response of T cells in human cervical carcinomas?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+457,Does preoperative mp-MRI of the prostate provide little information about staging of prostate carcinoma in daily clinical practice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+458,Do gene expression and genetic analysis reveal diverse causes of recessive self-compatibility in Brassica napus L?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+459,Do prostaglandin D2 and leukotriene E4 synergize to stimulate diverse TH2 functions and TH2 cell/neutrophil crosstalk?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+460,Does consumption of unprocessed cow 's milk protect infants from common respiratory infections?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+461,Does melatonin-sulforaphane hybrid ITH12674 induce neuroprotection in oxidative stress conditions by a 'drug-prodrug ' mechanism of action?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+462,Does comprehensive analysis suggest simple processes underlying EEG/ERP - demonstration with the go/no-go paradigm in ADHD?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+463,Does endometriosis also affect the decidua in contact with the fetal membranes during pregnancy?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+464,Do endometriotic ovarian cysts negatively affect the rate of spontaneous ovulation?,no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+465,Do song characteristics track bill morphology along a gradient of urbanization in house finches ( Haemorhous mexicanus )?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+466,Do the effects of ifenprodil on the activity of antidepressant drugs in the forced swim test in mice?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+467,Does pulmonary morbidity improve after autologous stem cell transplantation in POEMS syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+468,Do nitric oxide and cGMP induce COX-2 expression and PGE2 production in human granulosa cells through CREB signaling pathway?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+469,Does miR-219-5p modulate cell growth of papillary thyroid carcinoma by targeting estrogen receptor α?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+470,Is hypothalamic damage associated with inflammatory markers and worse cognitive performance in obese subjects?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+471,Is s100A8 a novel therapeutic target for anaplastic thyroid carcinoma?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+472,Do associations of Heart Rate With Inflammatory Markers Are Modulated by Gender and Obesity in Older Adults?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+473,Do plant traits respond to the competitive neighbourhood at different spatial and temporal scales?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+474,Are endoscopy and EUS key for effective surveillance and management of duodenal adenomas in familial adenomatous polyposis?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+475,Are well differentiation and intact Smad4 expression specific features of groove pancreatic ductal adenocarcinomas?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+476,Does peroxiredoxin 1 promote pancreatic cancer cell invasion by modulating p38 MAPK activity?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+477,Do increased interleukin-23/17 axis and C-reactive protein are associated with severity of acute pancreatitis in patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+478,"Does [ Waist-to-height ratio change with gender , age and pubertal stage in elementary school children ]?",no,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+479,Do maternal and childhood psychological factors predict chronic disabling fatigue at age 13 years?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+480,Is position-related injury uncommon in robotic gynecologic surgery?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+481,Is increased alcohol consumption in urocortin 3 knockout mice unaffected by chronic inflammatory pain?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+482,Does serum free light chain response after 2 courses of induction chemotherapy predict prognosis in myeloma patients?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+483,Does protopine inhibit heterotypic cell adhesion in MDA-MB-231 cells through down-regulation of multi-adhesive factors?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+484,Does hydrogen sulfide protect testicular germ cells against heat-induced injury?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+485,Is long noncoding RNA PCA3 gene promoter region related to the risk of prostate cancer on Chinese males?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+486,Does ski diminish TGF-β1-induced myofibroblast phenotype via up-regulating Meox2 expression?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+487,Does docosahexaenoic acid induce M2 macrophage polarization through peroxisome proliferator-activated receptor γ activation?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+488,Does different approaches for interpretation and reporting of immunohistochemistry analysis result in the bone tissue - a review?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+489,Do survey of radiologist attitudes and perceptions regarding the incorporation of a departmental peer review system?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+490,Does naringin ameliorate memory deficits in experimental paradigm of Alzheimer 's disease by attenuating mitochondrial dysfunction?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+491,Does tanshinone IIA attenuate neuropathic pain via inhibiting glial activation and immune response?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+492,"Are microcirculatory perfusion and vascular reactivity altered in post cardiac arrest patients , irrespective of target temperature management to 33 °C vs 36 °C?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+493,Does gRIN2B mediate susceptibility to intelligence quotient and cognitive impairments in developmental dyslexia?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+494,"Are arterial stiffness and central arterial wave reflection associated with serum uric acid , total bilirubin , and neutrophil-to-lymphocyte ratio in patients with coronary artery disease?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+495,Is minimally invasive coronary artery bypass grafting associated with improved clinical outcomes?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+496,"Is antiproliferative effect induced by novel imidazoline S43126 in PC12 cells mediated by ROS , stress activated MAPKs and caspases?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+497,Does chronic administration of phenytoin induce efflux transporter overexpression in rats?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+498,Is negative feedback loop of cholesterol regulation impaired in the livers of patients with Alagille syndrome?,yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+499,"Is sULF2 , a heparan sulfate endosulfatase , present in the blood of healthy individuals and increases in cirrhosis?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"

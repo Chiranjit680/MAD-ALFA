@@ -1,0 +1,2 @@
+debate-> qwen -> multirebuttal
+debate2 -> qwen -> normal

@@ -8,6 +8,7 @@ Refactor goals:
   - Load runtime models lazily (no heavy import-time initialization)
   - Use local model cache via local_model_store.get_local_model_dir
   - Use d4data/biomedical-ner-all for biomedical NER
+  - Use local Mistral-7B via get_judge_lm.mistral_inference instead of HF API
 """
 
 from typing import TypedDict, Annotated
@@ -20,7 +21,6 @@ import requests
 import xml.etree.ElementTree as ET
 from dotenv import load_dotenv
 import torch
-from huggingface_hub import InferenceClient
 from langgraph.graph import StateGraph, END
 from transformers import pipeline as hf_pipeline
 
@@ -29,7 +29,14 @@ try:
 except ImportError:
     from local_model_store import get_local_model_dir
 
+# Import local Mistral inference — replaces HuggingFace Inference API calls
+try:
+    from .get_judge_lm import llm_inference
+except ImportError:
+    from get_judge_lm import llm_inference
+
 load_dotenv()  # Load environment variables from .env file if present
+
 # ============================================================
 # Runtime model configuration
 # ============================================================
@@ -38,8 +45,6 @@ _HAS_CUDA = torch.cuda.is_available()
 _HF_DEVICE_ID = int(os.getenv("REBUTTAL_GPU_DEVICE", "0")) if _HAS_CUDA else -1
 _NER_MODEL_ID = "d4data/biomedical-ner-all"
 
-# FIX 1: Removed duplicate _ner_pipeline_gene — it was identical to _ner_pipeline,
-#         wasting memory/VRAM and causing every text to be processed twice.
 _ner_pipeline = None
 
 
@@ -47,8 +52,6 @@ def initialize_runtime_models(force_reload: bool = False) -> None:
     """Lazily initialize runtime models with local cache and CPU fallback."""
     global _ner_pipeline
 
-    # FIX 2: Guard now checks only the single pipeline variable; the previous
-    #         two-variable 'and' guard could skip re-init after a partial failure.
     if not force_reload and _ner_pipeline is not None:
         return
 
@@ -99,8 +102,6 @@ def _rebuttal_ner_extract(text: str) -> list[str]:
     seen = set()
     entities = []
 
-    # FIX 1 (continued): Loop now iterates over a single pipeline instead of two
-    #                     identical ones.
     try:
         for ent in _ner_pipeline(text):
             mention = ent["word"].strip()
@@ -126,8 +127,6 @@ def _rebuttal_ner_extract(text: str) -> list[str]:
 def _rebuttal_fetch_by_term(term: str, retmax: int = 5) -> list[str]:
     try:
         pmids = (
-            # FIX 3: Added timeout=15 to prevent the node hanging indefinitely
-            #         when NCBI is slow or unreachable.
             requests.get(
                 "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
                 params={"db": "pubmed", "term": term, "retmax": retmax, "retmode": "json"},
@@ -140,10 +139,6 @@ def _rebuttal_fetch_by_term(term: str, retmax: int = 5) -> list[str]:
         if not pmids:
             return []
 
-        # FIX 4: Decode the response bytes explicitly as UTF-8 (with error
-        #         replacement) before passing to ET.fromstring().  Passing raw
-        #         bytes can cause ParseError on abstracts containing accented
-        #         characters or extended Unicode.
         root = ET.fromstring(
             requests.get(
                 "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
@@ -165,7 +160,6 @@ def _rebuttal_fetch_by_term(term: str, retmax: int = 5) -> list[str]:
     except Exception as exc:
         print(f"   ⚠️  PubMed fetch failed for '{term}': {exc}")
         return []
-
 
 
 def _fetch_evidence_for_point(counter_point: str, retmax: int = 8) -> list[str]:
@@ -204,31 +198,61 @@ def _fetch_evidence_for_point(counter_point: str, retmax: int = 8) -> list[str]:
 
 
 # ============================================================
-# LLM helper
+# LLM helper — now uses local Mistral-7B via get_judge_lm
 # ============================================================
 
 
-def _llama_chat(messages: list, max_tokens: int = 800) -> str:
-    api_key = os.getenv("HF_TOKEN")
-    if not api_key:
-        raise ValueError("HF_TOKEN environment variable is not set.")
+def _local_chat(messages: list, max_new_tokens: int = 800) -> str:
+    """
+    Replace the remote HuggingFace Inference API call with a local
+    Mistral-7B inference call via get_judge_lm.llm_inference.
 
-    client = InferenceClient(
-        "meta-llama/Meta-Llama-3-8B-Instruct",
-        token=api_key,
-        timeout=120,
-    )
+    The 'messages' list follows the OpenAI chat format:
+      [{"role": "system"|"user"|"assistant", "content": "..."}]
 
-    print(f"   📡 Calling Llama-3-8B-Instruct (max_tokens={max_tokens}) ...")
-    resp = client.chat_completion(messages, max_tokens=max_tokens)
+    We flatten the list into a single prompt string that Mistral's
+    instruction format understands:
+      <s>[INST] {user_content} [/INST]
+    System messages are prepended before the first [INST] block.
+    """
+    system_parts = []
+    turn_parts = []
+
+    for msg in messages:
+        role = msg.get("role", "user")
+        content = msg.get("content", "")
+        if role == "system":
+            system_parts.append(content)
+        elif role == "user":
+            turn_parts.append(f"[INST] {content} [/INST]")
+        elif role == "assistant":
+            # Assistant turns go between instruction blocks (multi-turn)
+            turn_parts.append(content)
+
+    # Build the final prompt in Mistral instruct format
+    system_prefix = (" ".join(system_parts) + "\n\n") if system_parts else ""
+    prompt = "<s>" + system_prefix + " ".join(turn_parts)
+
+    print(f"   📡 Calling local Mistral-7B (max_new_tokens={max_new_tokens}) ...")
+    response = llm_inference(prompt, max_new_tokens=max_new_tokens)
     print("   ✅ Response received.")
-    return (resp.choices[0].message.content or "").strip()
-
+    return response.strip()
 
 
 def _extract_json_block(raw_text: str) -> dict:
     """Robustly parse JSON object from model output."""
-    cleaned = re.sub(r"```json|```", "", raw_text).strip()
+    cleaned = re.sub(r"```json|```", "", (raw_text or "")).strip()
+
+    if not cleaned:
+        raise ValueError("Model returned empty text; expected JSON object.")
+
+    # Prefer explicit fenced JSON when present.
+    fenced = re.search(r"```(?:json)?\s*(\{[\s\S]*?\})\s*```", raw_text or "", re.IGNORECASE)
+    if fenced:
+        try:
+            return json.loads(fenced.group(1))
+        except json.JSONDecodeError:
+            pass
 
     try:
         return json.loads(cleaned)
@@ -236,13 +260,27 @@ def _extract_json_block(raw_text: str) -> dict:
         start = cleaned.find("{")
         end = cleaned.rfind("}")
         if start != -1 and end != -1 and end > start:
-            # FIX 5: Preserve the original exception as context so callers can
-            #         see which parse step failed ('raise inner from exc').
             try:
                 return json.loads(cleaned[start : end + 1])
             except json.JSONDecodeError as inner:
                 raise inner from exc
         raise
+
+
+def _fallback_analysis(topic: str) -> dict:
+    """Safe defaults when model output is not valid JSON."""
+    return {
+        "logical_flaws": [
+            "Overgeneralization from limited or unspecified evidence.",
+            "Causal claims are asserted without adequately ruling out confounders.",
+            "Key assumptions are unstated and not empirically validated.",
+        ],
+        "counter_points": [
+            f"The claim about {topic} is too broad and not consistently supported by high-quality evidence.",
+            "Competing explanations can account for the observed outcomes, weakening the argument's causal certainty.",
+            "Methodological limitations and potential bias reduce confidence in the argument's conclusions.",
+        ],
+    }
 
 
 # ============================================================
@@ -285,11 +323,33 @@ Rules:
 - Logical flaws must name the specific fallacy or weakness
 - Output ONLY the JSON, no explanation"""
 
-    raw = _llama_chat(messages=[{"role": "user", "content": prompt}], max_tokens=600)
-    parsed = _extract_json_block(raw)
+    # CHANGED: was _llama_chat(...), now _local_chat(...)
+    raw = _local_chat(messages=[{"role": "user", "content": prompt}], max_new_tokens=600)
+    try:
+        parsed = _extract_json_block(raw)
+    except Exception as exc:
+        print(f"   ⚠️  Could not parse JSON from analyzer output: {exc}")
+        preview = (raw or "").strip().replace("\n", " ")[:220]
+        if preview:
+            print(f"   ↪️  Raw preview: {preview}")
+        parsed = _fallback_analysis(state["topic"])
 
-    logical_flaws = parsed.get("logical_flaws", [])
-    counter_points = parsed.get("counter_points", [])[:3]
+    logical_flaws = parsed.get("logical_flaws", []) if isinstance(parsed, dict) else []
+    counter_points = parsed.get("counter_points", []) if isinstance(parsed, dict) else []
+
+    # Normalize output schema and keep the graph progressing even on noisy model output.
+    if not isinstance(logical_flaws, list):
+        logical_flaws = [str(logical_flaws)]
+    if not isinstance(counter_points, list):
+        counter_points = [str(counter_points)]
+
+    logical_flaws = [str(x).strip() for x in logical_flaws if str(x).strip()][:5]
+    counter_points = [str(x).strip() for x in counter_points if str(x).strip()][:3]
+
+    if not counter_points:
+        fallback = _fallback_analysis(state["topic"])
+        logical_flaws = logical_flaws or fallback["logical_flaws"]
+        counter_points = fallback["counter_points"][:3]
 
     print(f"\n   🧠 Logical Flaws Found ({len(logical_flaws)}):")
     for idx, flaw in enumerate(logical_flaws, 1):
@@ -398,7 +458,8 @@ Requirements:
 
 Write the rebuttal now:"""
 
-    rebuttal_text = _llama_chat(messages=[{"role": "user", "content": prompt}], max_tokens=900)
+    # CHANGED: was _llama_chat(...), now _local_chat(...)
+    rebuttal_text = _local_chat(messages=[{"role": "user", "content": prompt}], max_new_tokens=900)
 
     print(f"\n📝 Final Rebuttal:\n{rebuttal_text}\n")
 
@@ -433,10 +494,14 @@ def create_rebuttal_graph():
 # ============================================================
 
 
-def generate_rebuttal(argument: str, topic: str, hf_api_key: str = None) -> dict:
-    if hf_api_key:
-        os.environ["HF_TOKEN"] = hf_api_key
+def generate_rebuttal(argument: str, topic: str) -> dict:
+    """
+    Generate a rebuttal for the given argument on the given topic.
 
+    Note: hf_api_key parameter has been removed — the local Mistral model
+    does not require an API key. HF_TOKEN is still read from the environment
+    by get_judge_lm if needed for model downloading.
+    """
     initialize_runtime_models()
 
     initial_state: RebuttalState = {
@@ -453,8 +518,6 @@ def generate_rebuttal(argument: str, topic: str, hf_api_key: str = None) -> dict
     print("⚔️  DEBATE REBUTTAL GENERATOR")
     print("=" * 80)
     print(f"Topic    : {topic}")
-    # FIX 6: Avoid appending "..." when the argument is already shorter than 120
-    #         characters — previously produced misleading output like "short arg..."
     suffix = "..." if len(argument) > 120 else ""
     print(f"Argument : {argument[:120]}{suffix}")
 
@@ -504,12 +567,6 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         help="Argument text to rebut",
     )
     parser.add_argument(
-        "--hf-api-key",
-        type=str,
-        default=None,
-        help="Optional HF token override; otherwise uses HF_TOKEN env var",
-    )
-    parser.add_argument(
         "--force-model-download",
         action="store_true",
         help="Force re-download of cached runtime models",
@@ -520,13 +577,10 @@ def _build_arg_parser() -> argparse.ArgumentParser:
 if __name__ == "__main__":
     args = _build_arg_parser().parse_args()
 
-    hf_token = os.getenv("HF_TOKEN")
-
     if args.force_model_download:
         get_local_model_dir(_NER_MODEL_ID, force_download=True)
 
     generate_rebuttal(
         argument=args.argument,
         topic=args.topic,
-        hf_api_key=hf_token
     )
