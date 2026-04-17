@@ -1461,3 +1461,1499 @@ Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 499,"Is sULF2 , a heparan sulfate endosulfatase , present in the blood of healthy individuals and increases in cirrhosis?",yes,error,False,,6.2105263157894735,"Error: CUDA error: device-side assert triggered
 Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 "
+0,Are group 2 innate lymphoid cells ( ILC2s ) increased in chronic rhinosinusitis with nasal polyps or eosinophilia?,yes,inconclusive,False,,0.0,Skipped — verdict not yes/no
+1,Does vagus nerve contribute to the development of steatohepatitis and obesity in phosphatidylethanolamine N-methyltransferase deficient mice?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+2,Does psammaplin A induce Sirtuin 1-dependent autophagic cell death in doxorubicin-resistant MCF-7/adr human breast cancer cells and xenografts?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+3,Is methylation of the FGFR2 gene associated with high birth weight centile in humans?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+4,Do tumor-infiltrating immune cell profiles and their change after neoadjuvant chemotherapy predict response and prognosis of breast cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+5,Is hidradenitis suppurativa a systemic disease with substantial comorbidity burden : a chart-verified case-control analysis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+6,Does reference range for serum and salivary testosterone in young men of Mediterranean region?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+7,Are secretory phospholipases A2 secreted from ciliated cells and increase mucin and eicosanoid secretion from goblet cells?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+8,Is admission hyperglycemia associated with failed reperfusion following fibrinolytic therapy in patients with STEMI : results of a retrospective study?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+9,Do systematic Reviews Published in Emergency Medicine Journals Routinely Search Clinical Trials Registries : A Cross-Sectional Analysis?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+10,Do obese patients with idiopathic pulmonary fibrosis have a higher 90-day mortality risk with bilateral lung transplantation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+11,Does promoter variant rs2301228 on the neural cell adhesion molecule 1 gene confer risk of schizophrenia in Han Chinese?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+12,Are [ Higher nitric oxide levels associated with disease activity in Egyptian rheumatoid arthritis patients ]?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+13,Does increased Syk phosphorylation lead to overexpression of TRAF6 in peripheral B cells of patients with systemic lupus erythematosus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+14,Are reasons why erupted third molars extracted in a public university in Mexico?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+15,Does the Boston keratoprosthesis provide a wide depth of focus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+16,Do large portion sizes increase bite size and eating rate in overweight women?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+17,Are routine preoperative restaging CTs after neoadjuvant chemoradiation for locally advanced rectal cancer low yield : a retrospective case study?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+18,Does pancreatic polypeptide regulate glucagon release through PPYR1 receptors expressed in mouse and human alpha-cells?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+19,Do two decades of British newspaper coverage regarding attempt cardiopulmonary resuscitation decisions : Lessons for clinicians?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+20,Is increased time from neoadjuvant chemoradiation to surgery associated with higher pathologic complete response rates in esophageal cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+21,Is epileptic focus localization based on resting state interictal MEG recordings feasible irrespective of the presence or absence of spikes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+22,Does seminal Helicobacter pylori treatment improve sperm motility in infertile asthenozoospermic men?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+23,Does a migrating ciliary gate compartmentalize the site of axoneme assembly in Drosophila spermatids?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+24,Is individual Public Transportation Accessibility Positively Associated with Self-Reported Active Commuting?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+25,Is congenital penile pathology associated with abnormal development of the dartos muscle : a prospective study of primary penile surgery at a tertiary referral center?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+26,Is δNp63 expression a protective factor of progression in clinical high grade T1 bladder cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+27,Do high levels of procalcitonin in the early phase after pediatric liver transplantation indicate poor postoperative outcome?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+28,Is decreased expression of liver-type fatty acid-binding protein associated with poor prognosis in hepatocellular carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+29,Does ephrin type-B receptor 4 activation reduce neointimal hyperplasia in human saphenous vein in vitro?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+30,Are low serum levels of vitamin D associated with post-stroke depression?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+31,Are polymorphisms near TBX5 and GDF7 associated with increased risk for Barrett 's esophagus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+32,"Does danzhi Xiaoyao San ameliorate depressive-like behavior by shifting toward serotonin via the downregulation of hippocampal indoleamine 2,3-dioxygenase?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+33,Is p63 more sensitive and specific than 34βE12 to differentiate adenocarcinoma of prostate from cancer mimickers?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+34,Does poor sleep predict symptoms of depression and disability retirement due to depression?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+35,Are phospholipase C epsilon 1 ( PLCE1 ) haplotypes associated with increased risk of gastric cancer in Kashmir Valley?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+36,Is tGFBI Expression in Cancer Stromal Cells Associated with Poor Prognosis and Hematogenous Recurrence in Esophageal Squamous Cell Carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+37,Are autoimmune features associated with chronic antibiotic-refractory pouchitis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+38,Does identical ATP1A3 mutation cause alternating hemiplegia of childhood and rapid-onset dystonia parkinsonism phenotypes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+39,Does metabolic control analysis of the Trypanosoma cruzi peroxide detoxification pathway identify tryparedoxin as a suitable drug target?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+40,Is basal Flt1 tyrosine kinase activity a positive regulator of endothelial survival and vascularization during zebrafish embryogenesis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+41,Do immunizations with hepatitis B viral antigens and a TLR7/8 agonist adjuvant induce antigen-specific immune responses in HBV-transgenic mice?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+42,Are lobar microbleeds associated with a decline in executive functioning in older adults?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+43,Is self-reported physical activity in smoking pre-cessation a protective factor against relapse for all?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+44,Is breathlessness at rest the dominant presentation of patients admitted with heart failure?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+45,Is delayed duodenal stump blow-out following total gastrectomy for cancer : Heightened awareness for the continued presence of the surgical past in the present the key to a successful duodenal stump disruption management . A case report?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+46,Are lipoprotein phospholipase A2 mass and activity associated with the diagnosis of acute brain ischemia?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+47,Is osteoprotegerin associated with subclinical left ventricular systolic dysfunction in diabetic hypertensive patients : a speckle tracking study?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+48,Do a new model for the standardization of experimental burn wounds?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+49,Does circulating atrial natriuretic peptide genetic association study identify a novel gene cluster associated with stroke in whites?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+50,Do whole-genome sequencing and epidemiological analysis provide evidence for cross-transmission of mycobacterium abscessus in a cohort of pediatric cystic fibrosis patients?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+51,Are high Atopobium vaginae and Gardnerella vaginalis vaginal loads associated with preterm birth?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+52,"Is cD30 expression a novel prognostic indicator in extranodal natural killer/T-cell lymphoma , nasal type?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+53,Do [ Clinical study on continuous plasma filtration absorption treatment for burn sepsis ]?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+54,Do [ Perinatal variables from newborns of Aymara mothers suggest a genetic adaptation to high altitude ]?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+55,Is 25-hydroxyvitamin D status associated with chronic cerebral small vessel disease?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+56,Is cD133-positive tumor cell content a predictor of early recurrence in colorectal cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+57,Does traumatic brain injury induce neuroinflammation and neuronal degeneration that is associated with escalated alcohol self-administration in rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+58,Does maternal undernutrition induce premature reproductive senescence in adult female rat offspring?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+59,Does granulocyte colony-stimulating factor prevent loss of spermatogenesis after sterilizing busulfan chemotherapy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+60,Is saikosaponin b2 a naturally occurring terpenoid that efficiently inhibits hepatitis C virus entry?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+61,Does autotaxin activity have a high accuracy to diagnose intrahepatic cholestasis of pregnancy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+62,Does a dedicated research program increase the quantity and quality of orthopaedic resident publications?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+63,Does cationic Nanogel-mediated Runx2 and Osterix siRNA Delivery decrease Mineralization in MC3T3 Cells?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+64,Do no sex differences exist in posterior condylar offsets of the knee?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+65,Do gene polymorphisms of stress hormone and cytokine receptors associate with immunomodulatory profile and psychological measurement?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+66,Does housing temperature influence the pattern of heat shock protein induction in mice following mild whole body hyperthermia?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+67,Does intra-articular injection of synthetic microRNA-210 accelerate avascular meniscal healing in rat medial meniscal injured model?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+68,Does pRMT5 enhance generation of induced pluripotent stem cells from dairy goat embryonic fibroblasts via down-regulation of p53?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+69,Do minimally invasive retroperitoneoscopic surgery for psoas abscess with thoracolumbar tuberculosis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+70,Is cartilage thickness at the posterior medial femoral condyle increased in femorotibial knee osteoarthritis : a cross-sectional CT arthrography study ( Part 2 )?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+71,Does loss of Frzb and Sfrp1 differentially affect joint homeostasis in instability-induced osteoarthritis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+72,Does tetraploid complementation prove pluripotency of induced pluripotent stem cells derived from adipose tissue?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+73,Does implementation of the acute care surgery model provide benefits in the surgical treatment of the acute appendicitis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+74,Is radiofrequency ablation plus devascularization the preferred treatment of hepatocellular carcinoma with esophageal varices?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+75,Is enhancement of in vitro activity of tuberculosis drugs by addition of thioridazine reflected by improved in vivo therapeutic efficacy?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+76,Do youth walking and biking rates vary by environments around 5 Louisiana schools?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+77,Does blockade of Central Angiotensin II AT1 Receptor protect the Brain from Ischemia/Reperfusion Injury in Normotensive Rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+78,Does syngap1 haploinsufficiency damage a postnatal critical period of pyramidal cell structural maturation linked to cortical circuit assembly?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+79,Is pentraxin 3 reduced in bipolar disorder?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+80,Are human enteroviruses the cause of neurological impairments in children at the Korle-Bu Teaching Hospital?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+81,Does a whole blood-based perfusate provide superior preservation of myocardial function during ex vivo heart perfusion?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+82,Is elevated immune monitoring early after cardiac transplantation associated with increased plaque progression by intravascular ultrasound?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+83,Are successional changes in the chicken cecal microbiome during 42 days of growth independent of organic acid feed additives?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+84,Does resveratrol enhance palmitate-induced ER stress and apoptosis in cancer cells?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+85,Is cDK1 and CDK2 activity a strong predictor of renal cell carcinoma recurrence?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+86,Is torsion of the optic nerve head a prominent feature of normal-tension glaucoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+87,Is endo first appropriate in some patients with critical limb ischemia because `` bridges are burned ''?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+88,Is unrecognized arteriosclerosis associated with wound complications after below-knee amputation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+89,Does hydrogen sulfide reduce inflammation following abdominal aortic occlusion in rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+90,Do seed bank dynamics govern persistence of Brassica hybrids in crop and natural habitats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+91,Is actinic keratosis with atypical basal cells ( AK I ) the most common lesion associated with invasive squamous cell carcinoma of the skin?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+92,Does high-intensity intermittent exercise increase pulmonary interstitial edema at altitude but not at simulated altitude?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+93,Does mild cognitive dysfunction affect diabetes mellitus control in minority elderly adults?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+94,Are anti-high mobility group box 1 ( anti-HMGB1 ) antibodies related to the occurrence of cutaneous lesions in systemic lupus erythematosus?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+95,Does alcohol disrupt levels and function of the cystic fibrosis transmembrane conductance regulator to promote development of pancreatitis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+96,Does blood viscosity but not shear stress associate with delayed flow-mediated dilation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+97,Does hypercholesterolemia increase the production of leukotriene B4 in neutrophils by enhancing the nuclear localization of 5-lipoxygenase?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+98,Do molecular signatures of mood stabilisers highlight the role of the transcription factor REST/NRSF?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+99,Does preconditioning of skeletal myoblast-based engineered tissue constructs enable functional coupling to myocardium in vivo?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+100,Does treatment with egg antigens of Schistosoma mansoni ameliorate experimental colitis in mice through a colonic T-cell-dependent mechanism?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+101,Is abnormal left ventricular contractile response to exercise in the absence of obstructive coronary artery disease associated with resting left ventricular long-axis dysfunction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+102,Is sleep efficiency ( but not sleep duration ) of healthy school-age children associated with grades in math and languages?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+103,Are vitamin D levels and bone turnover markers related to non-alcoholic fatty liver disease in severely obese patients?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+104,Are outcomes of abdominal wall reconstruction with acellular dermal matrix affected by wound contamination?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+105,Does airway pressure release ventilation reduce conducting airway micro-strain in lung injury?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+106,Do a simplified method of preventing implant hex drive from aspiration or accidental swallowing during stage two implant recovery?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+107,Is late onset spinal motor neuronopathy caused by mutation in CHCHD10?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+108,Does low perfusion index affect the difference in glucose level between capillary and venous blood?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+109,Are multiple pathways responsible for anti-inflammatory and cardiovascular activities of Hordeum vulgare L?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+110,Does [ ITF increase the transcriptional activity of ITF promoter via the JAK-STAT3 signal transduction pathway ]?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+111,Does clinical evaluation of pazopanib eye drop versus ranibizumab intravitreal injections in subjects with neovascular age-related macular degeneration?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+112,Does long-term treadmill exercise attenuate tau pathology in P301S tau transgenic mice?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+113,Does alpha and beta EEG power reflect L-dopa acute administration in parkinsonian patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+114,Does subclinical left ventricular dysfunction by echocardiographic speckle-tracking strain analysis relate to outcome in sarcoidosis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+115,Are guanine quadruplexes formed by specific regions of human transposable elements?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+116,"Is circulating soluble LR11 , a novel marker of smooth muscle cell proliferation , enhanced after coronary stenting in response to vascular injury?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+117,Are de novo donor-specific HLA antibodies associated with early and high-grade bronchiolitis obliterans syndrome and death after lung transplantation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+118,Does a systematic review identify valid comorbidity indices derived from administrative health data?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+119,Do comparative metabolomics in vegans and omnivores reveal constraints on diet-dependent gut microbiota metabolite production?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+120,"Is disruption of SOX6 associated with a rapid-onset dopa-responsive movement disorder , delayed development , and dysmorphic features?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+121,Does capsular closure affect development of heterotopic ossification after hip arthroscopy?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+122,Do smoking and unstable hinge fractures cause delayed gap filling irrespective of early weight bearing after open wedge osteotomy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+123,Is topical clobetasol in conjunction with topical tretinoin effective in preventing scar formation after superficial partial-thickness burn ulcers of the skin : A retrospective study?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+124,Does the rate of hypo-osmotic challenge influence regulatory volume decrease ( RVD ) and mechanical properties of articular chondrocytes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+125,Does liver-specific deletion of augmenter of liver regeneration accelerate development of steatohepatitis and hepatocellular carcinoma in mice?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+126,Does transcriptome analysis of proton pump inhibitor-responsive esophageal eosinophilia reveal proton pump inhibitor-reversible allergic inflammation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+127,"Is a high normal thyroid-stimulating hormone associated with arterial stiffness , central systolic blood pressure , and 24-hour systolic blood pressure in males with treatment-naïve hypertension and euthyroid?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+128,Does rotenone impair autophagic flux and lysosomal functions in Parkinson 's disease?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+129,"Is interleukin-6 associated with obesity , central fat distribution , and disease severity in patients with acute pancreatitis?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+130,Is platelet activation associated with myocardial infarction in patients with pneumonia?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+131,Is fasting serum dipeptidyl peptidase-4 activity independently associated with alanine aminotransferase in type 1 diabetic patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+132,"Is initial combination therapy with metformin , pioglitazone and exenatide more effective than sequential add-on therapy in subjects with new-onset diabetes . Results from the Efficacy and Durability of Initial Combination Therapy for Type 2 Diabetes ( EDICT ) : a randomized trial?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+133,Does diet-induced obesity prevent the development of acute traumatic coagulopathy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+134,Do endothelial progenitor cells induce transplant arteriosclerosis via VEGFR-1/2 activity?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+135,Are elevated beta2-glycoprotein I-low-density lipoprotein levels associated with the presence of diabetic microvascular complications?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+136,Is bone marrow from blotchy mice dispensable to regulate blood copper and aortic pathologies but required for inflammatory mediator production in LDLR-deficient mice during chronic angiotensin II infusion?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+137,Are maternal salivary cortisol levels during pregnancy positively associated with overweight children?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+138,Is less advanced disease at initiation of salvage androgen deprivation therapy associated with decreased mortality following biochemical failure post-salvage radiation therapy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+139,Is low postoperative platelet count associated with negative outcome after liver resection for hepatocellular carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+140,Does early menarche increase the risk of Type 2 diabetes in young and middle-aged Korean women?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+141,Does twenty-four hour in-hospital congenital cardiac surgical coverage improve perioperative ECMO support outcomes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+142,Does early primary repair of tetralogy of Fallot lead to increased postoperative resource utilization?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+143,Are aggregate National Early Warning Score ( NEWS ) values more important than high scores for a single vital signs parameter for discriminating the risk of adverse outcomes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+144,Are plant communities on infertile soils less sensitive to climate change?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+145,Does licochalcone-A sensitize human esophageal carcinoma cells to TRAIL-mediated apoptosis by proteasomal degradation of XIAP?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+146,Is intranodal cytokeratin particles a predictive marker of efficacy for neoadjuvant therapies in patients with squamous cell carcinoma of the esophagus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+147,Does iNKT/CD1d-antitumor immunotherapy significantly increase the efficacy of therapeutic CpG/peptide-based cancer vaccine?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+148,Is pseudomonas aeruginosa in CF and non-CF homes found predominantly in drains?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+149,Is increased expression of pleiotrophin a prognostic marker for patients with gastric cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+150,Does the CC-genotype of the cyclooxygenase-2 gene associate with decreased risk of nasopharyngeal carcinoma in a Tunisian population?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+151,Does a shoe insole delivering subsensory vibratory noise improve balance and gait in healthy elderly people?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+152,Do sleep spindle and slow wave frequency reflect motor skill performance in primary school-age children?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+153,Does the dual CCR5 and CCR2 inhibitor cenicriviroc redistribute HIV into extracellular space : implications for plasma viral load and intracellular DNA decline?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+154,Do our experiences on the reconstruction of lateral scalp burn alopecia with tissue expanders?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+155,Is prostate-specific antigen doubling time subsequent to radical prostatectomy a predictor of outcome following salvage external beam radiation therapy : a single-centre experience?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+156,Is head-shaft angle a risk factor for hip displacement in children with cerebral palsy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+157,Is implementation of a surgical intensive care unit service associated with improved outcomes for trauma patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+158,Does elevated amygdala activity during reappraisal anticipation predict anxiety in avoidant personality disorder?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+159,Does prenatal marijuana exposure predict marijuana use in young adulthood?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+160,Does nAIF1 inhibit gastric cancer cells migration and invasion via the MAPK pathways?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+161,Is cMV specific cytokine release assay in whole blood optimized by combining synthetic CMV peptides and toll like receptor agonists?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+162,Does light alcohol consumption play a protective role against non-alcoholic fatty liver disease in Japanese men with metabolic syndrome?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+163,Do genomic selection accuracies within and between environments and small breeding groups in white spruce?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+164,Do local and general anaesthesia influence outcome of transfemoral aortic valve implantation?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+165,Does multidrug resistant bacteriuria before percutaneous nephrolithotomy predict for postoperative infectious complications?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+166,Is higher fibrinogen level independently linked with the presence and severity of new-onset coronary atherosclerosis among Han Chinese population?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+167,Is the combination of pill count and self-reported adherence a strong predictor of first-line ART failure for adults in South Africa?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+168,Does microRNA-19a enhance proliferation of bronchial epithelial cells by targeting TGFβR2 gene in severe asthma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+169,"Are serum triglycerides , but not cholesterol or leptin , decreased in suicide attempters with mood disorders?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+170,Is soft drink consumption associated with depressive symptoms among adults in China?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+171,Is blood alcohol concentration negatively associated with gambling money won on the Iowa gambling task in naturalistic settings after controlling for trait impulsivity and alcohol tolerance?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+172,Does sexual activity predispose to reflux episodes in patients with gastroesophageal reflux disease?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+173,Is vascular injury associated with increased mortality in winter sports trauma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+174,Is a common variant in RAB27A gene associated with fractional exhaled nitric oxide levels in adults?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+175,Does a dietary phytochemical blend prevent liver damage associated with adipose tissue mobilization in ovariectomized rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+176,Is real-time three-dimensional transesophageal echocardiography useful for percutaneous closure of multiple secundum atrial septal defects?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+177,Do longitudinal patterns of cortisol regulation differ in maltreated and nonmaltreated children?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+178,Does substance Use and Related harm Among Adolescents With and Without Traumatic Brain Injury?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+179,Is eGFR-TKI effective regardless of treatment timing in pulmonary adenocarcinoma with EGFR mutation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+180,Is diabetes associated with increased risk of venous thromboembolism : a systematic review and meta-analysis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+181,Is invasion of uterine cervical squamous cell carcinoma cells facilitated by locoregional interaction with cancer-associated fibroblasts via activating transforming growth factor-beta?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+182,Is increased serum cancer antigen-125 a marker for severity of deep endometriosis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+183,Do detailed characterization of tumor infiltrating lymphocytes in two distinct human solid malignancies show phenotypic similarities?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+184,Do long-term lung cancer survivors have permanently decreased quality of life after surgery?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+185,Does pregestational maternal obesity impair endocrine pancreas in male F1 and F2 progeny?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+186,Does chloroquine enhance temozolomide cytotoxicity in malignant gliomas by blocking autophagy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+187,Is long-term therapy with temozolomide a feasible option for newly diagnosed glioblastoma : a single-institution experience with as many as 101 temozolomide cycles?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+188,Is thiazide-induced hyponatraemia associated with increased water intake and impaired urea-mediated water excretion at low plasma antidiuretic hormone and urine aquaporin-2?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+189,Is weight based heparin dosing for thromboembolic disease associated with earlier anticoagulation in surgical patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+190,Does prospective international cohort study demonstrate inability of interim PET to predict treatment failure in diffuse large B-cell lymphoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+191,Does fungal metabolite myriocin promote human herpes simplex virus-2 infection?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+192,Does prenatal zinc reduce stress response in adult rat offspring exposed to lipopolysaccharide during gestation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+193,Are global histone H3 lysine 27 triple methylation levels reduced in vessels with advanced atherosclerotic plaques?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+194,Does corn silk maysin induce apoptotic cell death in PC-3 prostate cancer cells via mitochondria-dependent pathway?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+195,Do some Strychnos spinosa ( Loganiaceae ) leaf extracts and fractions have good antimicrobial activities and low cytotoxicities?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+196,Does maternal immune activation in nonhuman primates alter social attention in juvenile offspring?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+197,Does atractylodes macrocephala Koidz stimulate intestinal epithelial cell migration through a polyamine dependent mechanism?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+198,Does chronic exercise normalize changes in Cav 1.2 and KCa 1.1 channels in mesenteric arteries from spontaneously hypertensive rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+199,Does cXCR3 antagonist VUF10085 bound to an intrahelical site distinct from that of the broad spectrum antagonist TAK-779?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+200,Does prolonged P wave duration predict stroke mortality among type 2 diabetic patients with prevalent non-major macrovascular disease?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+201,Do central adenosine A1 and A2A receptors mediate the antinociceptive effects of neuropeptide S in the mouse formalin test?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+202,Does experimental diabetes mellitus type 1 increase hippocampal content of kynurenic acid in rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+203,Does blockade of p38 mitogen-activated protein kinase pathway ameliorate delayed gastric emptying in streptozotocin-induced diabetic rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+204,Is high level of plasma matrix metalloproteinase-11 associated with clinicopathological characteristics in patients with oral squamous cell carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+205,Is interferon lambda-3 associated with clinical outcome in patients with HCV-induced compensated cirrhosis : a long-term cohort study?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+206,Does dorsomedial Prefrontal Cortex mediate the Impact of Serotonin Transporter Linked Polymorphic Region Genotype on Anticipatory Threat Reactions?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+207,Does intensity-modulated whole pelvic radiotherapy provide effective dosimetric outcomes for cervical cancer treatment with lower toxicities?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+208,Does treatment with anti-C5a antibody improve the outcome of H7N9 virus infection in African green monkeys?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+209,"Are socioeconomic inequalities still a barrier to full child vaccine coverage in the Brazilian Amazon : a cross-sectional study in Assis Brasil , Acre , Brazil?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+210,Does mental fatigue affect maximal anaerobic exercise performance?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+211,Is tP53 Pro72 allele enriched in oral tongue cancer and frequently mutated in esophageal cancer in India?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+212,Does α-Enolase play a catalytically independent role in doxorubicin-induced cardiomyocyte apoptosis and mitochondrial dysfunction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+213,Do a qualitative study of the background and in-hospital medicolegal response to female burn injuries in India?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+214,Is african-american race a predictor of seminal vesicle invasion after radical prostatectomy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+215,Is self-rated health associated with the length of stay at the intensive care unit and hospital following cardiac surgery?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+216,Is integrin-based meningioma cell migration promoted by photon but not by carbon-ion irradiation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+217,Does early-life stress selectively affect gastrointestinal but not behavioral responses in a genetic model of brain-gut axis dysfunction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+218,Are historic and current hepatitis B viral DNA and quantitative HBsAg level associated with cirrhosis in non-Asian women with chronic hepatitis B?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+219,Does patatin-related phospholipase pPLAIIIδ influence auxin-responsive cell morphology and organ size in Arabidopsis and Brassica napus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+220,Does histoscanning have low sensitivity and specificity for seminal vesicle invasion?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+221,Is low percentage of free prostate-specific antigen ( PSA ) a strong predictor of later detection of prostate cancer among Japanese men with serum levels of total PSA of 4.0 ng/mL or less?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+222,"Is permanent His-bundle pacing feasible , safe , and superior to right ventricular pacing in routine clinical practice?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+223,Are clinical and serum-based markers associated with death within 1 year of de novo implant in primary prevention ICD recipients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+224,Does astaxanthin prevent TGFβ1-induced pro-fibrogenic gene expression by inhibiting Smad3 activation in hepatic stellate cells?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+225,Is vitamin D deficiency in mycosis fungoides and Sézary syndrome patients similar to other cancer patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+226,Does genome wide association study identify variants in NBEA associated with migraine in bipolar disorder?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+227,Is nASH resolution associated with improvements in HDL and triglyceride levels but not improvement in LDL or non-HDL-C levels?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+228,Is aberrant P-cadherin expression associated to aggressive feline mammary carcinomas?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+229,Does casticin inhibit COX-2 and iNOS expression via suppression of NF-κB and MAPK signaling in lipopolysaccharide-stimulated mouse macrophages?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+230,Do transcriptome sequencing and comparative analysis reveal long-term flowing mechanisms in Hevea brasiliensis latex?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+231,Does cannabidiol fail to reverse hypothermia or locomotor suppression induced by Δ ( 9 ) -tetrahydrocannabinol in Sprague-Dawley rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+232,Does miR-1228 promote the proliferation and metastasis of hepatoma cells through a p53 forward feedback loop?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+233,Does over-expression of small ubiquitin-like modifier proteases 1 predict chemo-sensitivity and poor survival in non-small cell lung cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+234,Is wnt signaling involved in 6-benzylthioinosine-induced AML cell differentiation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+235,Does ginsenoside Rg3 improve erectile function in streptozotocin-induced diabetic rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+236,Does serum alanine aminotransferase predict the histological course of non-alcoholic steatohepatitis in Japanese patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+237,Does hepatic Notch2 deficiency lead to bile duct agenesis perinatally and secondary bile duct formation after weaning?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+238,Does recipient T cell TIM-3 and hepatocyte galectin-9 signalling protect mouse liver transplants against ischemia-reperfusion injury?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+239,Does contrast enhancement pattern on multidetector CT predict malignancy in pancreatic endocrine tumours?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+240,Does ketamine inhibit proliferation of neural stem cell from neonatal rat hippocampus in vitro?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+241,Does iTRAQ-based quantitative proteome and phosphoprotein characterization reveal the central metabolism changes involved in wheat grain development?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+242,Are low serum 25-hydroxyvitamin d concentrations associated with increased risk for melanoma and unfavourable prognosis?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+243,Does [ Descriptive study of healthcare professionals ' management of tick bite ]?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+244,Do left ventricular end-diastolic pressure and ejection fraction correlate independently with high-sensitivity cardiac troponin-T concentrations in stable heart failure?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+245,Does image-guided placement of long-term central venous catheters reduce complications and cost?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+246,Does exosome-mediated transfer of miR-10b promote cell invasion in breast cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+247,Does biolimus-eluting stent with biodegradable polymer improve clinical outcomes in patients with acute myocardial infarction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+248,Does triptolide inhibit TGF-β1-induced cell proliferation in rat airway smooth muscle cells by suppressing Smad signaling?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+249,Are aerobic capacity and upper limb strength reduced in women diagnosed with breast cancer : a systematic review?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+250,Is same-day intrauterine device placement rarely complicated by pelvic infection?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+251,Do obese first-degree relatives of patients with type 2 diabetes with elevated triglyceride levels exhibit increased β-cell function?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+252,Do identification of methicillin-resistant Staphylococcus aureus ( MRSA ) strains isolated from burn patients by multiplex PCR?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+253,Is coexpression of IQ-domain GTPase-activating protein 1 ( IQGAP1 ) and Dishevelled ( Dvl ) correlated with poor prognosis in non-small cell lung cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+254,Do ethnobotanical survey of medicinal plants used for pregnant women׳s health conditions in Menoua division-West Cameroon?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+255,Does shexiang Tongxin dropping pill attenuate atherosclerotic lesions in ApoE deficient mouse model?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+256,Do aCTN3 R577X genotypes associate with Class II and deepbite malocclusions?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+257,Is percutaneous intervention of circumflex chronic total occlusions associated with worse procedural outcomes : insights from a Multicentre US Registry?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+258,Does fiber supplementation lower plasma p-cresol in chronic kidney disease patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+259,Do antiphospholipid antibodies correlate with stroke severity and outcome in patients with antiphospholipid syndrome?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+260,Are `` There bugs in condoms '' : Tanzanian close-to-community providers ' ability to offer effective adolescent reproductive health services?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+261,Does engineered heart tissue transplantation alter electrical-conduction function in rats with myocardial infarction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+262,Does protein kinase D1 deficiency promote differentiation in epidermal keratinocytes?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+263,Is cD133 expression correlated with poor prognosis in colorectal cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+264,Does atomoxetine reduce hyperactive/impulsive behaviours in neurokinin-1 receptor 'knockout ' mice?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+265,Do pre-treatment serum total bilirubin level as an indicator of optimal CPT-11 dosage?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+266,Does the indole derivative NecroX-7 improve nonalcoholic steatohepatitis in ob/ob mice through suppression of mitochondrial ROS/RNS and inflammation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+267,Does fluorescent labelling of intestinal epithelial cells reveal independent long-lived intestinal stem cells in a crypt?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+268,Does noble-Collip Drum Trauma induce Disseminated Intravascular Coagulation But Not Acute Coagulopathy of Trauma-Shock?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+269,Does aminoguanidine inhibit ventricular fibrosis and remodeling process in isoproterenol-induced hypertrophied rat hearts by suppressing ROS and MMPs?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+270,Is biliary-enteric reconstruction with hepaticoduodenostomy following laparoscopic excision of choledochal cyst associated with better postoperative outcomes : a single-centre experience?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+271,Do international observational study of nutritional support in mechanically ventilated patients following burn injury?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+272,Is rs2070424 of the SOD1 gene associated with risk of Alzheimer 's disease?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+273,Is structural maintenance of chromosomes 4 a predictor of survival and a novel therapeutic target in colorectal cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+274,Is intermediate filament protein nestin expressed in developing meninges?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+275,Is dorsal plication without degloving safe and effective for correcting ventral penile deformities?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+276,Is work disability related to the presence of arthritis and not to a specific diagnosis . Results from a large early arthritis cohort in Argentina?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+277,Is the highly prevalent H3F3A mutation in giant cell tumours of bone shared by sporadic central giant cell lesion of the jaws?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+278,Is chronic thromboembolic pulmonary hypertension associated with iron overload?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+279,Does immunological profiling in chronic rhinosinusitis with nasal polyps reveal distinct VEGF and GM-CSF signatures during symptomatic exacerbations?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+280,Do adolescents and young adults with type 1 diabetes display a high prevalence of endothelial dysfunction?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+281,Do azo pigments and quinacridones induce delayed hypersensitivity in red tattoos?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+282,Is neoadjuvant treatment response in negative nodes an important prognosticator after esophagectomy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+283,Do adult aortic valve interstitial cells have greater responses to toll-like receptor 4 stimulation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+284,Do pollen tube cell walls of wild and domesticated tomatoes contain arabinosylated and fucosylated xyloglucan?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+285,Do clinical events after cessation of lamivudine therapy in patients recovered from hepatitis B flare with hepatic decompensation?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+286,Is miRNA-205 a candidate tumor suppressor that targets ZEB2 in renal cell carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+287,Does the functional SNP rs3746804 in C20orf54 modify susceptibility to esophageal squamous cell carcinoma?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+288,Does soluble CD30 predict late acute rejection or safe tapering of immunosuppression in renal transplantation?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+289,"Is generalized , severe , chronic periodontitis associated with anemia of chronic disease : a pilot study in urban , Indian males?",yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+290,Does progressive periodontal disease have a simultaneous incremental elevation of gingival crevicular fluid and serum CRP levels?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+291,Is the anterior cingulate cortex a critical hub for pain-induced depression?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+292,Is the low level of glucagon-like peptide-1 ( glp-1 ) a risk factor of type 2 diabetes mellitus?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+293,Does shinzami Korean purple-fleshed sweet potato extract prevent ischaemia-reperfusion-induced liver damage in rats?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+294,Does vagus nerve stimulation have antidepressant effects in the kainic acid model for temporal lobe epilepsy?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+295,Is epidermal growth factor receptor mutation associated with longer local control after definitive chemoradiotherapy in patients with stage III nonsquamous non-small-cell lung cancer?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+296,Is epidemic MRSA clone ST22-IV more resistant to multiple host- and environment-related stresses compared with ST228-I?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+297,Is virological failure after 1 year of first-line ART associated with HIV minority drug resistance in rural Cameroon?,no,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+298,Is blood transfusion associated with recurrence of hepatocellular carcinoma after hepatectomy in Child-Pugh class A patients?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
+299,Does transcutaneous oxygen tension measurements following peripheral transluminal angioplasty procedure have more specificity and sensitivity than ankle brachial index?,yes,error,False,,0.0,"Error: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+"
